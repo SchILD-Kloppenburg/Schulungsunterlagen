@@ -3,6 +3,8 @@ SVWS Schulungsunterlagen
 
 Liebe Teilnehmer ...
 
-## Aufgbae 1
+## Aufgabe 1
++ Legen Sie einen Schüler an
++ Löschen Sie einen Schüler
 
 ## Aufgabe 2
