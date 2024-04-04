@@ -8,7 +8,7 @@ Hilfe finden Sie hier: https://help.svws-nrw.de/gost/beratung/
 
 ### Aufgabe Wahlfächer festlegen
 Ändern Sie die Fächerwahlmöglichkeit für die Vorlage wie folgt:
-+ Die Fächer Physik und Philosophie wird auch als LK in der Oberstufe angeboten.
++ Die Fächer Physik und Philosophie werden auch als LK in der Oberstufe angeboten.
 + Das Fach Chinesisch kann als neu einsetzende Fremdsprache als Grundkurs gewählt werden.
 + Katholische und evangelische Religion darf nicht gleichzeitig gewählt werden.
 + Der Projektkurs Medizintechnik wird ab kommenden Schuljahr nicht mehr angeboten.
