@@ -23,7 +23,7 @@ Erstellen Sie für alle Oberstufenhalbjahre eine Klausurvorlage mit folgenden Vo
 + In EF.1 findet im Fach Englisch eine mündliche Prüfung statt.
 + Ergänzen Sie die Bemerkung, dass für das Fach Mathe eine Formelsammlung ab der Q2 vorliegen muss.
 + Für das Fach Französich soll der Vermerk "Audiodatei" in der EF.2 hinzugefügt werden.
-+ Die Erdkundeklausur hat ab der Q1.2 einen Auswahlzeit von 10 Minuten.
++ Die Erdkundeklausur hat ab der Q1.2 eine Auswahlzeit von 10 Minuten.
 + Das Fach Literatur kann nur mündlich belegt werden.
 
 ## Blockung der Jahrgangsstufe 10
