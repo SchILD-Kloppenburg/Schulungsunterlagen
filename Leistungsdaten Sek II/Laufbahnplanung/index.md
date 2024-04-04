@@ -27,11 +27,28 @@ Erstellen Sie für alle Oberstufenhalbjahre eine Klausurvorlage mit folgenden Vo
 + Das Fach Literatur kann nur mündlich belegt werden.
 
 ## Blockung der Jahrgangsstufe 10
-### Aufgabe Fachwahlen
+Um den Jahrgang 10 für das kommende Schuljahr zu planen, sollen die Laufbahndaten erhoben werden und eine Blockung vorbereitet werden.
 
-### Aufgabe
-### Aufgabe
-### Aufgabe
+### Aufgabe Abiturjahrgang erstellen
+Legen Sie für die Jahrgangsstufe 10 unter Oberstufe einen neuen Abiturjahrgang an. Die Standard-Einstellungen für die Fächerwahl in der Oberstufe werden aus der Vorlage übernommen und müssen somit nicht weiter angepasst werden. 
+
+Pflegen Sie folgende Angaben dem Abiturjahrgang hinzu:
+* Karin Link und Tom Bockemüller sind Beratungslehrer der kommenden EF.
+* Die Abgabe der Wahlbögen wird auf den 05.04. diesen Jahres terminiert.
+
+### Aufgabe: Wahlen im Client durchführen
+Führen Sie mit Diana Büttner gemeinsam eine Laufbahnplanung im SVWS-Client durch.
+
+### Aufgabe: Wahlbogen manuell ausfüllen
+Robert Kurz und Jana Holten möchten ihren Wahlbogen schriftlich ausfüllen. Drucken Sie ein entsprechende Vorlage.
+
+### Aufgabe: Laufbahndateien exportieren
+Exportieren Sie für alle Schüler der Jahrgangsstufe 10 die Laufbahndateien, sodass diese mit dem WebLuPO ihre Wahlen vom Rechner aus durchführen können.
+
+> [!NOTE]
+> Hier finden Sie eine Anleitung: https://help.svws-nrw.de/gost/laufbahn/
+
+### Aufgabe: 
 ### Aufgabe
 
 ## Blockung der Jahrgangsstufe EF, Q1 und Q2
