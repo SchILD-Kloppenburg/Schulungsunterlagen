@@ -7,7 +7,7 @@ Mit den folgenden Aufgaben wird eine Vorlage erstellt. Die hier vorgenommenen Ei
 Hilfe finden Sie hier: https://help.svws-nrw.de/gost/beratung/
 
 ### Aufgabe Wahlfächer festlegen
-Ändern Sie die Fächerfahlmöglichkeit für die Vorlage wie folgt:
+Ändern Sie die Fächerwahlmöglichkeit für die Vorlage wie folgt:
 + Die Fächer Physik und Philosophie wird auch als LK in der Oberstufe angeboten.
 + Das Fach Chinesisch kann als neu einsetzende Fremdsprache als Grundkurs gewählt werden.
 + Katholische und evangelische Religion darf nicht gleichzeitig gewählt werden.
