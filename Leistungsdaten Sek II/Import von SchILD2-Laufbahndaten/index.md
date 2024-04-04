@@ -17,9 +17,7 @@ Kontrollieren Sie,
 > Über "Backup wiederherstellen: SQLite-Schema importieren" kann die entsprechende Datenbank ausgewählt werden.
 
 ### Aufgabe: Import der Fachwahlen
+Importieren Sie die Fachwahlen der EF, Q1 und Q2. (.lup-Dateien)
 
-
-> [!TIP] 
-> Beachten Sie den Unterschied zwischen PL und PP!
-
-
+### Aufgaben zur Blockung
+In Arbeit
