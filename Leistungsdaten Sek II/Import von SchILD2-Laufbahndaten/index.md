@@ -33,10 +33,9 @@ Korrigieren Sie diesen Fehler.
 Nachdem E5 nun nicht mehr im Fächerkatalog der Oberstufe erscheint, ist das Fach E nach wie vor ausgegraut. Betrachtet man eine Laufbahnplanung eines Schülers, ist folgender Fehlercode ersichtlich:   
 > Eine fortgeführte Fremdsprache wurde in der Sprachenfolge als neu einsetzend eingetragen. Die Sprachenfolge ist fehlerhaft.
 
-Korrigieren Sie diesen Fehler.
-> [!NOTE]
-> Da aktuell noch keine Gruppenprozesse über den SVWS-Client implementiert sind, kann dies mit SchILD-NRW3 schnell korrigiert werden.
-### Aufgabe: Englisch 
+Korrigieren Sie diesen Fehler. Da aktuell noch keine Gruppenprozesse über den SVWS-Client implementiert sind, kann dies mit SchILD-NRW3 schnell korrigiert werden.
+
+![Sprachenfolge](./graphics/Schulungsmaterial_LeistungsdatenS2_LupImport_SprachenfolgeEintragen.png)
 
 
 ### Aufgaben zur Blockung
