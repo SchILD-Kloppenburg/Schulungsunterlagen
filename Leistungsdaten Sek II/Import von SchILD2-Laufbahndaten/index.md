@@ -22,11 +22,22 @@ Importieren Sie die Fachwahlen der EF, Q1 und Q2. (.lup-Dateien)
 # Fehlerbehebung
 Aufgrund von Altlasten aus der SchILD2-DB kann es zu Fehlern in der Laufbahnplanung kommen. 
 
-### Aufgabe: Englisch E5 vs. E
+### Aufgabe: Englischwahl korrigieren
 In der vorliegenden Datenbank wurde neben dem Kürzel E auch E5 in der Oberstufe gepflegt:
 ![Englisch in der Oberstufe](./graphics/Schulungsmaterial_LeistungsdatenS2_LupImport_E5.png)
 
 Korrigieren Sie diesen Fehler.
+> [!NOTE]
+> Kataloge --> Fächer
+
+Nachdem E5 nun nicht mehr im Fächerkatalog der Oberstufe erscheint, ist das Fach E nach wie vor ausgegraut. Betrachtet man eine Laufbahnplanung eines Schülers, ist folgender Fehlercode ersichtlich:   
+> Eine fortgeführte Fremdsprache wurde in der Sprachenfolge als neu einsetzend eingetragen. Die Sprachenfolge ist fehlerhaft.
+
+Korrigieren Sie diesen Fehler.
+> [!NOTE]
+> Da aktuell noch keine Gruppenprozesse über den SVWS-Client implementiert sind, kann dies mit SchILD-NRW3 schnell korrigiert werden.
+### Aufgabe: Englisch 
+
 
 ### Aufgaben zur Blockung
 In Arbeit
