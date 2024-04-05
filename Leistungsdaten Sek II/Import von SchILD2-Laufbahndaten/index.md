@@ -6,8 +6,8 @@ Für diesen Aufgabenblock finden Sie im Ordner "..." eine SQLite-Spieldatenbank 
 Speichern Sie alle Beispiel-Dateien aus dem Ordner xxx 
 
 ### Aufgabe: Import der Spieldatenbank
-Importieren Sie die SQLite Datenbank und sichten Sie diese.  
-Kontrollieren Sie, 
+Importieren Sie die SQLite Datenbank über das Admin-Tool im Client. Da einige Features derzeit noch nicht über den Client realisiert werden können (beispielsweise Gruppenprozesse), ist es hilfreich, eine Verbidungsdatei von SchILD-NRW3 zur Datenbank zu erstellen. Nutzen Sie dazu das Program migrate.db.    
+Kontrollieren Sie anschließend im Client, 
 + ob in der Datenbank noch kein Abiturjahrgang angelegt ist und
 + ob bei den SchülerInnen noch keine Laufbahnplanung hinterlegt ist.
 
