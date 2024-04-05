@@ -19,5 +19,14 @@ Kontrollieren Sie,
 ### Aufgabe: Import der Fachwahlen
 Importieren Sie die Fachwahlen der EF, Q1 und Q2. (.lup-Dateien)
 
+# Fehlerbehebung
+Aufgrund von Altlasten aus der SchILD2-DB kann es zu Fehlern in der Laufbahnplanung kommen. 
+
+### Aufgabe: Englisch E5 vs. E
+In der vorliegenden Datenbank wurde neben dem Kürzel E auch E5 in der Oberstufe gepflegt:
+![Englisch in der Oberstufe](./graphics/Schulungsmaterial_LeistungsdatenS2_LupImport_E5.png)
+
+Korrigieren Sie diesen Fehler.
+
 ### Aufgaben zur Blockung
 In Arbeit
