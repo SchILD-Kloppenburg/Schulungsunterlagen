@@ -1,6 +1,8 @@
 # Schulungsunterlagen
 SVWS Schulungsunterlagen
 
+siehe auch : https://github.com/SVWS-NRW/Schulungsunterlagen
+
 Liebe Teilnehmer ...
 
 ## Bevor es losgeht
