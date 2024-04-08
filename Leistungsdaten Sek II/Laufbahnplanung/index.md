@@ -53,7 +53,6 @@ Für die nachfolgenden Teilaufgaben finden Sie [hier](https://help.svws-nrw.de/g
 ### Aufgabe: Beratung der Schüler
 Nach dem Import der Laufbahndaten fällt auf, dass....
 
-
 ### Aufgabe
 
 ## Blockung der Jahrgangsstufe EF, Q1 und Q2
