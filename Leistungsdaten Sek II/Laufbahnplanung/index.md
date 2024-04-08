@@ -12,11 +12,11 @@ Hilfe finden Sie hier: https://help.svws-nrw.de/gost/beratung/
 + Das Fach Chinesisch kann als neu einsetzende Fremdsprache als Grundkurs gewählt werden.
 + Katholische und evangelische Religion darf nicht gleichzeitig gewählt werden.
 + Der Projektkurs Medizintechnik wird ab kommenden Schuljahr nicht mehr angeboten.
-+ Die Schüler können sowohl Geschichte als auch Sozialwissenschaften als Zusatzkurs in der Q2.1 wählen
++ Die Schüler können sowohl Geschichte als auch Sozialwissenschaften als Zusatzkurs in der Q2.1 wählen.
 
 ### Aufgabe: Beratungstexte festlegen
 Für den Mailversand soll standardmäßig der Text "Dies ist eine automatisch generierte Mail" ausgegeben werden. Weiterhin sollen die Beratungsbögen die Floskel "Rückgabe bis zum xx.xx.xx." enthalten.   
-Das genaue Datum muss natürlich später in den Abiturjahrgängen noch angepasst werden. 
+Das genaue Datum muss später in den jeweiligen Abiturjahrgängen angepasst werden. 
 
 ### Aufgabe: Klausurvorlage definieren
 Erstellen Sie für alle Oberstufenhalbjahre eine Klausurvorlage mit folgenden Vorgaben:
@@ -61,10 +61,7 @@ Exportieren Sie für alle Schüler der Jahrgangsstufe 10 die Laufbahndateien, so
 
 Dies betrifft:
 
-das Festlegen der Beratungslehrer für diesen Abiturjahrgang
-die Vorlage für den Beratungstext auf dem Wahlbogen
-die Vorlage für den Mailtext bei einem Versand der Laufbahnplanungsdatei
-die Vorlagen für die durchzuführenden Fachwahlen im Rahmen der Laufbahnplanung in diesem Abiturjahrgang
+
 
 Für diesen Aufgabenblock finden Sie im Ordner "..." eine SQLite-Spieldatenbank mit zugehörigen .lup und .blo-Dateien.
 https://help.svws-nrw.de/gost/beratung/
