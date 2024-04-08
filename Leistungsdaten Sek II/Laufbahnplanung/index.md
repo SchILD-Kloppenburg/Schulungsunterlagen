@@ -43,12 +43,12 @@ Führen Sie mit Diana Büttner gemeinsam eine Laufbahnplanung im SVWS-Client dur
 **b. Wahlbogen manuell ausfüllen**  
 Robert Kurz und Jana Holten möchten ihren Wahlbogen schriftlich ausfüllen. Drucken Sie ein entsprechende Vorlage.
 
-**c. Laufbahndateien exportieren**  
+**c. Laufbahndateien exportieren/importieren**  
 * Exportieren Sie für alle Schüler der Jahrgangsstufe 10 die Laufbahndateien, sodass diese mit dem WebLuPO ihre Wahlen vom Rechner aus durchführen können.
 * Pflegen Sie über den LuPO-Client die Laufbahndaten von Sarah Blavin ein. Nutzen Sie dazu folgenden Link: https://laufbahnplanung.svws-nrw.de/#/load
 * Importieren Sie die Laufbahndaten von Sarah in die Datenbank
 
-**d. Laufbahndateien imortieren**
+**d. Laufbahndateien komplett imortieren**
 
 
 
