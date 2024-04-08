@@ -36,14 +36,21 @@ Pflegen Sie folgende Angaben dem Abiturjahrgang hinzu:
 * Karin Link und Tom Bockemüller sind Beratungslehrer der kommenden EF.
 * Die Abgabe der Wahlbögen wird auf den 05.04. diesen Jahres terminiert.
 
-### Aufgabe: Wahlen im Client durchführen
+### Aufgabe: Fachwahlen
+**a. Wahlen im Client durchführen**  
 Führen Sie mit Diana Büttner gemeinsam eine Laufbahnplanung im SVWS-Client durch.
 
-### Aufgabe: Wahlbogen manuell ausfüllen
+**b. Wahlbogen manuell ausfüllen**  
 Robert Kurz und Jana Holten möchten ihren Wahlbogen schriftlich ausfüllen. Drucken Sie ein entsprechende Vorlage.
 
-### Aufgabe: Laufbahndateien exportieren
-Exportieren Sie für alle Schüler der Jahrgangsstufe 10 die Laufbahndateien, sodass diese mit dem WebLuPO ihre Wahlen vom Rechner aus durchführen können.
+**c. Laufbahndateien exportieren**  
+* Exportieren Sie für alle Schüler der Jahrgangsstufe 10 die Laufbahndateien, sodass diese mit dem WebLuPO ihre Wahlen vom Rechner aus durchführen können.
+* Pflegen Sie über den LuPO-Client die Laufbahndaten von Sarah Blavin ein. Nutzen Sie dazu folgenden Link: https://laufbahnplanung.svws-nrw.de/#/load
+* Importieren Sie die Laufbahndaten von Sarah in die Datenbank
+
+**d. Laufbahndateien imortieren**
+
+
 
 > [!NOTE]
 > Hier finden Sie eine Anleitung: https://help.svws-nrw.de/gost/laufbahn/
@@ -55,7 +62,6 @@ Exportieren Sie für alle Schüler der Jahrgangsstufe 10 die Laufbahndateien, so
 ### Aufgabe
 ### Aufgabe
 ### Aufgabe
-
 
 
 
