@@ -37,6 +37,10 @@ Korrigieren Sie diesen Fehler. Da aktuell noch keine Gruppenprozesse über den S
 
 ![Sprachenfolge](./graphics/Schulungsmaterial_LeistungsdatenS2_LupImport_SprachenfolgeEintragen.png)
 
+# Import einer Kurs42 Blockung
+### Aufgaben: Import-Vorbereitung
+Bevor eine alte Kurs42-Blockung im SVWS-Client importiert werden kann, müssen die dazu notwendigen Text-Dateien aus Kurs42 heraus exportiert und gezippt werden. Details dazu sind im SVWS-Client im Reiter Schule/Datenaustausch/Kurs42-Blockungen beschrieben.   
+1. Öffnen Sie die Blockung für die EF xxxxx.blo und erstellen Sie einen zip-Ordner 
+2. Importieren Sie die Blockung im SVWS-Client und sichten Sie diese im Abiturjahrgang der EF.
+3. Optional: Erstellen Sie mit dem Client eine weitere Blockung und vergleichen Sie die Ergebisse
 
-### Aufgaben zur Blockung
-In Arbeit
