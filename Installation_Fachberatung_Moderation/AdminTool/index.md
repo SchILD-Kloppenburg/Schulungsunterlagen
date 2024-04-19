@@ -14,7 +14,7 @@
 
 ### Backup erstellen
 Sichern Sie eine Datenbank in eine SQLite Datenbank.
-> Tip
+> [!TIP] 
 > Das Backup wird automatisch im Download-Ordner gesichert.
 
 
