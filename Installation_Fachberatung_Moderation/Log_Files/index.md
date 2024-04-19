@@ -12,14 +12,14 @@ Prüfen Sie
 
 &nbsp;
 
-* Sichten Sie die Datei **svwsconfig.json** im Ordner C:\ProgramData\SVWS-Server\**res**. Beachten Sie, dass hier ihr Benutzername und ihr Passwort in Klartext gespeichert sind.
-Die Bedeutung der einzelnen Parameter können [hier](https://doku.svws-nrw.de/Deployment/Windows-Installer/#konfigurationsdatei-editieren) nachgelesen werden:
+Sichten Sie die Datei **svwsconfig.json** im Ordner C:\ProgramData\SVWS-Server\res. Beachten Sie, dass hier ihr Benutzername und ihr Passwort in Klartext gespeichert sind.
+Die Bedeutung der einzelnen Parameter können [hier](https://doku.svws-nrw.de/Deployment/Windows-Installer/#konfigurationsdatei-editieren) nachgelesen werden.
 
 
 ### SVWS-Arbeitsverzeichnis
 Sichten Sie den Ordner C:\SVWS-Arbeitsverzeichnis. Hier werden u.a. Sicherungen, Reports und Verbindungsdateien abgespeichert. Der Ordner wurde bei der Installation von SchILD-NRW3 erstellt. Für das Arbeiten im Browser wird dieser Ordner nicht benötigt.
 
-* Sichten Sie einmal ihre Verbindungsdatei?
-* Welche Reports werden bei der Installation bereits ausgerollt?
+* Sichten Sie einmal ihre **Verbindungsdatei**?
+* Welche **Reports** werden bei der Installation bereits ausgerollt?
 
 
