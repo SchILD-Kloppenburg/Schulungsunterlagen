@@ -10,5 +10,5 @@ Mit Hilfe der folgenden Aufgaben wird
 Sichten wichtiger Installations-Ordner und log-Dateie
 
 
-## UInstallation vom SVWS-Server
-Einstellungen für die [Unterrichtsfächer](./Unterrichtsfächer/index.md) der Oberstufe
+## Installation vom SVWS-Server
+Einstellungen für die Unterrichtsfächer der Oberstufe 
