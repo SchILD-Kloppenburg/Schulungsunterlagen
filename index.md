@@ -13,4 +13,9 @@ Alle Aufgaben können mit Hilfe der Wiki-Anleitungen gelöst werden. Entsprechen
 ## Hilfreiche Links
 - Wiki-Hilfen: https://schulverwaltungsinfos.nrw.de/svws/wiki/index.php?title=SchILD-NRW
 - Forum für SchILD-NRW-3 und SVWS: 
-- SVWS-Dokumentation: https://hilfe.svws-nrw.de/
+- SVWS-Dokumentation: https://help.svws-nrw.de/
+- Installation/Aufsetzen von Schulungsrechnern für Fortbildungen: https://doku.svws-nrw.de/Schulungsumgebungen/
+- Download von Updates für SchILD-NRW3: https://github.com/SVWS-NRW/Schild3-BetaTest/releases
+- Download von Updates für den SVWS-Server: https://github.com/SVWS-NRW/SVWS-Server/releases
+- Fehlermldungen zum SVWS-Server/Client: https://github.com/SVWS-NRW/SVWS-Server/issues
+- Fehlermeldungen zu SchILD-NRW3: https://github.com/SVWS-NRW/Schild3-BetaTest/issues
