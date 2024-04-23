@@ -1,9 +1,9 @@
 # Klausuren Blocken
 Erst Stundenplan
 
-
+WEITER
 Eine Grafik
-![Repository SVWS-NRW/SVWS-Server](./graphics/InstallationSVWS_GitHubSuchen.png)
+
 
 > [!TIP] 
 > Hier kommt ein Tipp
