@@ -6,10 +6,21 @@ export default defineConfig({
   title: "Schulungsunterlagen",
   description: "Schulungen SVWS-Server NRW",
   themeConfig: {
+
+    lastUpdated: {
+				text: 'Diese Seite wurde zuletzt bearbeitet am',
+				formatOptions: {
+					dateStyle: 'full',
+					timeStyle: 'medium'
+				}
+			},
+			search: {
+				provider: 'local'
+			},
     // https://vitepress.dev/reference/default-theme-config
     nav: [
-      { text: 'Home', link: '/' },
-      { text: 'Handbuch', link: 'https://help.svws-nrw.de' }
+      { text: 'Handbuch', link: 'https://help.svws-nrw.de' },
+      { text: 'Dokumentation', link: 'https://doku.svws-nrw.de' }
     ],
 
     sidebar: [
@@ -30,7 +41,7 @@ export default defineConfig({
     ],
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
+      { icon: 'github', link: 'https://github.com/SVWS-NRW' }
     ]
   }
 })
