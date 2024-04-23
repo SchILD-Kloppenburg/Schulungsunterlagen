@@ -9,15 +9,17 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Examples', link: '/markdown-examples' }
+      { text: 'Handbuch', link: 'https://help.svws-nrw.de' }
     ],
 
     sidebar: [
       {
-        text: 'Examples',
+        text: 'Leistungsdate Sek II',
         items: [
-          { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' }
+          { text: 'Allgemeine Vorlage', link: '/Allgmein_Vorlage' },
+          { text: 'Unterrichtsfächer', link: '/Unterrichtsfaecher' },
+          { text: 'Blockung EF', link: '/BlockungKommendeEF' },
+          { text: 'Import SchILD2 Laufbahndaten', link: '/ImportSchILD2Laufbahndaten' }
         ]
       }
     ],
