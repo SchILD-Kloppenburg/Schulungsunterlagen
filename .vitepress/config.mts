@@ -25,6 +25,14 @@ export default defineConfig({
 
     sidebar: [
       {
+		  text: 'Installation', link: '/Installation_Fachberatung_Moderation/', collapsed: true, 
+        items: [
+          { text: 'Installation SVWS-Server', link: '/Installation_Fachberatung_Moderation/Installation_SVWS/' },
+          { text: 'Installation Zertifikat', link: '/Installation_Fachberatung_Moderation/Installation_Zertifikat/' },
+          { text: 'Installation Schild3', link: '/Installation_Fachberatung_Moderation/Installation_SchILD3/' }
+        ]
+	  },
+	  {
         text: 'Leistungsdaten Sek II', link: '/LeistungsdatenSekII/', collapsed: true, 
         items: [
           { text: 'Allgemeine Vorlagen', link: '/LeistungsdatenSekII/Allgemein_Vorlage/' },
