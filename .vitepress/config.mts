@@ -20,8 +20,8 @@ export default defineConfig({
           { text: 'Unterrichtsfächer', link: '/LeistungsdatenSekII/Unterrichtsfaecher/' },
           { text: 'Blockung EF', link: '/LeistungsdatenSekII/BlockungKommendeEF/', collapsed: true, 
           item :[
-                { text: 'Laufbahnplanung kommende EF', link: '/LeistungsdatenSekII/Unterrichtsfaecher/LaufbahnplanungJG10/' },
-                { text: 'Klausurplanung EF', link: '/LeistungsdatenSekII/Unterrichtsfaecher/KlausurplanungJG10/' }
+                { text: 'Laufbahnplanung kommende EF', link: '/LeistungsdatenSekII/BlockungKommendeEF/LaufbahnplanungJG10/' },
+                { text: 'Klausurplanung EF', link: '/LeistungsdatenSekII/BlockungKommendeEF/KlausurplanungJG10/' }
               ]
             },
           { text: 'Import SchILD2 Laufbahndaten', link: '/LeistungsdatenSekII/ImportSchILD2Laufbahndaten/' }
