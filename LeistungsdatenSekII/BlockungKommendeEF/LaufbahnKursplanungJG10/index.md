@@ -38,17 +38,35 @@ Sichten Sie die Fachbwahlmatrix und entscheiden Sie, ob alle Kurse der Wahl ents
 
 ### Kursplanung
 Für die nachfolgenden Aufgabenteile findet man [hier](https://hilfe.svws-nrw.de/gost/kursplanung/) eine Anleitung
-1. Legen Sie eine neue Kursblockung für das Halbjahr EF.1 an.
-2. Regeln festlegen (konkret!!!! WEITER)
+1. Legen Sie eine neue Kursblockung "Blockung EF.1 - Datum" für das Halbjahr EF.1 an.
+2. In der Blockung finden Sie drei evangelische Religionskurse. Reduzieren Sie die Anzahl auf zwei.
+3. Drucken Sie eine Liste aller Schülerinnen und Schüler, die Latein in der EF.1 gewählt haben.
+4. Der Vertiefungskurs soll alleine in Schiene 13 gelegt werden.
+5. Da es nur einen Chemiekollegen für die Oberstufe gibt, müssen die Chemiekurse in unterschiedlichen Schienen liegen.
 
 
 
 
 Hinweise:   
+**Zu 1:**
 Nach Anlegen einer Blockung sieht diese zunächst so aus:   
-![Anlegen einer Blockung](./graphics/BlockungJG10_Blockung.png)
+![Anlegen einer Blockung](./graphics/BlockungJG10_Blockung.png)   
 
+**Zu 2:** 
+Nach einem Klick auf den Kurs erscheint u.a. ein Löschbutton
+![Kurs löschen](./graphics/BlockungKommendeEF_KursplanungJG10_loeschen.png)   
 
+**Zu 3:**
+Durch Klick auf die Fachwahlen erscheinen recht alls Schülerinnen und Schüler, die dieses Fach gewählt haben.
+![Schüler einer Fachwahl](./graphics/BlockungKommendeEF_KursplanungJG10_schuelerliste.png)   
+
+**Zu 4:**
+Eine Möglichkeit:
+![Vertiefungskurs festlegen](./graphics/BlockungKommendeEF_KursplanungJG10_VTF.png)   
+
+**Zu 5:**
+Öffnen Sie die Detailansicht für die Festlegung von weiteren Regeln:
+![Festlegen von RRegeln](./graphics/BlockungKommendeEF_KursplanungJG10_Regeln.png) 
 
 ### Installation Starten
 Führen Sie die Installation als Administrator aus!

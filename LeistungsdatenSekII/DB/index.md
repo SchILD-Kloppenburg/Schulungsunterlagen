@@ -1,22 +1,15 @@
-# Laufbahnplanung
-Für die folgenden Aufgaben können Sie die Datenbank xxx aus dem Ordner nutzen.
+# Beispieldatenbanken für die Oberstufenplanung
 
-## Erstellung einer Vorlage
-Mit den folgenden Aufgaben wird eine Vorlage erstellt. Die hier vorgenommenen Einstellungen werden für die später angelegten Abiturjahrgänge als Standard-Einstellung übernommen.   
+Die Datenbanken für die Bearbeitung der Aufgaben stehen als SQlite-DBs zur Verfügung.
 
-
-
-
-
+> [!NOTE]
+> Es wird empfohlen, den Import über den Client-Admin auszuführen.  
+> Rufen Sie dazu über den Brower die Seite *https://localhost/admin* auf.  
+> Über "Backup wiederherstellen: SQLite-Schema importieren" kann die entsprechende Datenbank ausgewählt werden.
 
 
 
-
-
-
-
-Dies betrifft:
-
+WEITER
 
 
 Für diesen Aufgabenblock finden Sie im Ordner "..." eine SQLite-Spieldatenbank mit zugehörigen .lup und .blo-Dateien.
@@ -30,10 +23,7 @@ Kontrollieren Sie,
 + ob in der Datenbank noch kein Abiturjahrgang angelegt ist und
 + ob bei den SchülerInnen noch keine Laufbahnplanung hinterlegt ist.
 
-> [!NOTE]
-> Es wird empfohlen, den Import über den Client-Admin auszuführen.  
-> Rufen Sie dazu über den Brower die Seite *https://localhost/admin* auf.  
-> Über "Backup wiederherstellen: SQLite-Schema importieren" kann die entsprechende Datenbank ausgewählt werden.
+
 
 ### Aufgabe: Import der Fachwahlen
 Importieren Sie die Fachwahlen der EF, Q1 und Q2. (.lup-Dateien)
