@@ -55,10 +55,10 @@ Bevor eine alte Kurs42-Blockung im SVWS-Client importiert werden kann, müssen d
 
 
 > [!NOTE]
-> **Für den Optimalfall (kein Schüler muss einen bestehenden Kurs wechseln)**
-> Alle Kurse außer den Zusatzkursen links mit einer Checkbox auswählen (=Erst alle auswählen und Zusatzkurse dann abwählen) 
-> die Fixierungsoptionen oben nutzen und damit Kurse und Schüler fixieren (dauert etwas)
-> Anschließend bei den Zusatzkursen evtl. Schienen sperren, in die sie nicht sollen. 
+> **Für den Optimalfall (kein Schüler muss einen bestehenden Kurs wechseln)**  
+> Alle Kurse außer den Zusatzkursen links mit einer Checkbox auswählen (=Erst alle auswählen und Zusatzkurse dann abwählen)    
+> die Fixierungsoptionen oben nutzen und damit Kurse und Schüler fixieren (dauert etwas)   
+> Anschließend bei den Zusatzkursen evtl. Schienen sperren, in die sie nicht sollen.    
 > Jetzt blocken.
 
 

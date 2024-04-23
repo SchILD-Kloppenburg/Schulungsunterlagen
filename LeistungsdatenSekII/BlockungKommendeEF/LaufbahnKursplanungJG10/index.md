@@ -36,15 +36,13 @@ Drucken Sie die Laufbahnwahlen
 ### Blocken der Laufbahndaten
 Sichten Sie die Fachbwahlmatrix und entscheiden Sie, ob alle Kurse der Wahl entsprechend zustanden kommen.
 
-### Kursplanung
+### Kursplanung (Blockungseinstellungen)
 Für die nachfolgenden Aufgabenteile findet man [hier](https://hilfe.svws-nrw.de/gost/kursplanung/) eine Anleitung
 1. Legen Sie eine neue Kursblockung "Blockung EF.1 - Datum" für das Halbjahr EF.1 an.
 2. In der Blockung finden Sie drei evangelische Religionskurse. Reduzieren Sie die Anzahl auf zwei.
 3. Drucken Sie eine Liste aller Schülerinnen und Schüler, die Latein in der EF.1 gewählt haben.
 4. Der Vertiefungskurs soll alleine in Schiene 13 gelegt werden.
 5. Da es nur einen Chemiekollegen für die Oberstufe gibt, müssen die Chemiekurse in unterschiedlichen Schienen liegen.
-
-
 
 
 Hinweise:   
@@ -68,12 +66,12 @@ Eine Möglichkeit:
 Öffnen Sie die Detailansicht für die Festlegung von weiteren Regeln:
 ![Festlegen von RRegeln](./graphics/BlockungKommendeEF_KursplanungJG10_Regeln.png) 
 
-### Installation Starten
-Führen Sie die Installation als Administrator aus!
-
-> [!TIP] 
-> Eine gute Anleitung finden Sie auch im [Wiki](https://schulverwaltungsinfos.nrw.de/svws/wiki/index.php?title=Installation_SVWS-Server_und_SchILD-NRW_3#Installation_des_SVWS-Servers)
-
+### Kursplanung: Blockung durchführen
+Wenn alle Einstellungen fertig sind kann nun auf zwei unterschiedliche Arten geblockt werden. Leiten Sie sich zunächst eine Blockung ab und benennen Sie das Duplikat mit Blockung EF.1 - Datum - Kopie
+1) Blocken Sie die Originalblockung schnell
+2) Lösen Sie ggf. Wahlkonflikte 
+3) Übertragen Sie die Blockung in die Kurstabelle der Schüler
+4) Drucken Sie die Kursbelegung eines Schülers aus
 
 
 
