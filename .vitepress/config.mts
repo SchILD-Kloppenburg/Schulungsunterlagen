@@ -14,12 +14,12 @@ export default defineConfig({
 
     sidebar: [
       {
-        text: 'Leistungsdaten Sek II', link: /LeistungsdatenSekII/, collapsed: true, 
+        text: 'Leistungsdaten Sek II', link: '/LeistungsdatenSekII/', collapsed: true, 
         items: [
-          { text: 'Allgemeine Vorlage', link: '/LeistungsdatenSekII//Allgemein_Vorlage/' },
-          { text: 'Unterrichtsfächer', link: '/LeistungsdatenSekII//Unterrichtsfaecher/' },
-          { text: 'Blockung EF', link: '/LeistungsdatenSekII//BlockungKommendeEF/' },
-          { text: 'Import SchILD2 Laufbahndaten', link: '/LeistungsdatenSekII//ImportSchILD2Laufbahndaten/' }
+          { text: 'Allgemeine Vorlage', link: '/LeistungsdatenSekII/Allgemein_Vorlage/' },
+          { text: 'Unterrichtsfächer', link: '/LeistungsdatenSekII/Unterrichtsfaecher/' },
+          { text: 'Blockung EF', link: '/LeistungsdatenSekII/BlockungKommendeEF/' },
+          { text: 'Import SchILD2 Laufbahndaten', link: '/LeistungsdatenSekII/ImportSchILD2Laufbahndaten/' }
         ]
       }
     ],
