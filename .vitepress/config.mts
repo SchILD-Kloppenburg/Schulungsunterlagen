@@ -16,9 +16,14 @@ export default defineConfig({
       {
         text: 'Leistungsdaten Sek II', link: '/LeistungsdatenSekII/', collapsed: true, 
         items: [
-          { text: 'Allgemeine Vorlage', link: '/LeistungsdatenSekII/Allgemein_Vorlage/' },
+          { text: 'Allgemeine Vorlagen', link: '/LeistungsdatenSekII/Allgemein_Vorlage/' },
           { text: 'Unterrichtsfächer', link: '/LeistungsdatenSekII/Unterrichtsfaecher/' },
-          { text: 'Blockung EF', link: '/LeistungsdatenSekII/BlockungKommendeEF/' },
+          { text: 'Blockung EF', link: '/LeistungsdatenSekII/BlockungKommendeEF/', collapsed: true, 
+          item :[
+                { text: 'Laufbahnplanung kommende EF', link: '/LeistungsdatenSekII/Unterrichtsfaecher/LaufbahnplanungJG10/' },
+                { text: 'Klausurplanung EF', link: '/LeistungsdatenSekII/Unterrichtsfaecher/KlausurplanungJG10/' }
+              ]
+            },
           { text: 'Import SchILD2 Laufbahndaten', link: '/LeistungsdatenSekII/ImportSchILD2Laufbahndaten/' }
         ]
       }
