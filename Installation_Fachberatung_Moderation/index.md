@@ -1,14 +1,11 @@
 # Installation
-Mit Hilfe der folgenden Aufgaben wird 
-+ der SVWS-Server installiert,
-+ eine SchILD2-DB migriert,
-+ das Zertifikat installiert
-+ SchILD-NRW3 isntalliert,
-+ eine weitere Datenbank migriert
-+ 
-•	Migration eine Access-Datenbank
-Sichten wichtiger Installations-Ordner und log-Dateie
+In diesem Modul werden wir...
+* den SVWS-Server installieren
+* eine SchILD2-DB migrieren,
+* das Zertifikat installieren
+* SchILD-NRW3 isntallieren,
+* eine weitere Datenbank migrieren,
+* Dantenbanken sichern und wieder einlesen,
+* wichtiger Installations-Ordner und log-Dateien kennenlernen und
+* die Datenbankstruktur mit DBeaver sichten.
 
-
-## Installation vom SVWS-Server
-Einstellungen für die Unterrichtsfächer der Oberstufe 

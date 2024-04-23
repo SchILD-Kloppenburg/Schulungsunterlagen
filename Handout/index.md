@@ -1,5 +1,5 @@
 # Installation
-Wir werden heute vormittag
+In diesem Modul werden wir...
 * den SVWS-Server installieren
 * eine SchILD2-DB migrieren,
 * das Zertifikat installieren
