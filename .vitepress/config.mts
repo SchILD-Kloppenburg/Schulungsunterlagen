@@ -3,7 +3,7 @@ import { defineConfig } from 'vitepress'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   base: '/Schulungsunterlagen/',
-  title: "Schulungsunterlagen",
+  title: "SVWS Schulungsunterlagen",
   description: "Schulungen SVWS-Server NRW",
   themeConfig: {
 
@@ -19,7 +19,7 @@ export default defineConfig({
 			},
     // https://vitepress.dev/reference/default-theme-config
     nav: [
-      { text: 'Handbuch', link: 'https://help.svws-nrw.de' },
+      { text: 'Hilfe & Handbuch', link: 'https://help.svws-nrw.de' },
       { text: 'Dokumentation', link: 'https://doku.svws-nrw.de' }
     ],
 
