@@ -1,5 +1,4 @@
-# Schulungsunterlagen
-SVWS Schulungsunterlagen
+# SVWS Schulungsunterlagen
 
 Liebe Teilnehmer ...
 
