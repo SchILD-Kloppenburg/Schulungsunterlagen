@@ -46,3 +46,17 @@ Nun sollte der Reiter oben rechts „Dokumentenverwaltung“ lauten und Sie kön
 Es folgt eine Übersicht der wichtigsten Bedienelemente des Reportexplorers.
 
 ![wichtige Bedienelemente des Reportexploreres](Bilder/Bedienelemente.png "Die wichtigsten Bedienelemente des Reportexplorers")
+
+### Die Oberfläche des Reportdesigners
+
+## Erstellung von Listen
+
+### Ziel
+
+Wir wollen von der Pike auf eine Liste mit Daten über das Lehrerkollegium erstellen. Das Ergebnis soll in etwa so aussehen:
+
+### Allgemeines und Vorarbeit
+
+Die Elemente der Liste müssen also in den Detailbereich, da hier alle Datensätze „abgearbeitet“ werden. Je nachdem, was für eine Liste ausgegeben werden soll, muss die Datenquelle angepasst werden. Klicken Sie auf „Bericht“ im oberen Menu, dann „Datenquellen“ und das passende auswählen. Standard ist „Schueler“.
+
+Da wir eine Lehrerliste erstellen wollen, müssen wir logischerweise die Datenquelle „Lehrer“ auswählen.
