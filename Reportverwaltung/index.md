@@ -34,7 +34,7 @@ Oben rechts können Sie den Report-Schnellzugriff schließen und jederzeit mit e
 
 Gehen Sie unter Extras - Programm-Einstellungen auf den Reiter Globale Einstellungen - Dokumentenverwaltung und aktivieren Sie die Dokumentenverwaltung. Klicken Sie nun unter „Dokumentenverzeichnis“ auf den gelben Ordner und legen einen für Sie passen Pfad fest. Da voreingestellt für alle Schüler der Testdatenbank auf Ihrem Rechner unter C:\ ein Verzeichnis angelegt wird, bietet es sich an, einen Ordner „Dokumentenverwaltung“ in unserem Testprogrammordner anzulegen. Den können Sie später auch einfach wieder löschen.
 
-![Einrichten der Dokumentenverwaltung](Bilder/Dokumentenverwaltung_einrichten.png "Dokumentenverwaltung einrichten)
+![Einrichten der Dokumentenverwaltung](Bilder/Dokumentenverwaltung_einrichten.png "Dokumentenverwaltung einrichten")
 
 Klicken Sie nun auf „Dateimaske bearbeiten“ und legen Sie per drag & drop die für Sie passende Verzeichnis- und Dateistruktur der Dokumentenverwaltung an. Alle Merkmale, die Sie nicht benötigen ziehen Sie hierfür in das Kästchen „Merkmale“. Zur Festlegung der Reihenfolge benutzen Sie die roten Pfeiltasten. Bestätigen Sie mit „OK“, klicken Sie auf „Dokumentenverzeichnisse für alle aktiven Schüler anlegen“ und schließen Sie die Programmeinstellungen.
 Nun sollte der Reiter oben rechts „Dokumentenverwaltung“ lauten und Sie können einen beliebigen Report in das Dokumentenverzeichnis eines Schülers mit der Einstellung „Ausgabe … nur Archivierung (in Dokumentenverwaltung)“  „Ausgabe für … den ausgewählten Schüler“ drucken, der dort als pdf-Datei hinterlegt wird.
@@ -106,7 +106,7 @@ In der Fußzeile geben wir den Stand der Liste an. Erstellen Sie im Fußbereich 
 
 Die geplante Lehrerliste hat die Spalten Nummer, Name und Vorname, Geburtsdatum, Anschrift, Telefonnummern, E-Mail und Unterrichtsfächer. Demnach müssen sieben Spalten eingerichtet werden, wodurch sich das Querformat anbietet. Gehen Sie im Menü auf Datei - Seite einrichten - Papiergröße und wählen Sie Querformat.
 
-![Übersicht über die Seiteneinstellungen](Bilder/Seiteneinstellungen.png "Übersicht über die Seiteneinstellungen)
+![Übersicht über die Seiteneinstellungen](Bilder/Seiteneinstellungen.png "Übersicht über die Seiteneinstellungen")
 
 ### Tabellen anlegen (TableGrid)
 
@@ -116,7 +116,7 @@ Zum Erstellen einer Tabellenstruktur verwenden wir ein sog. TableGrid.
 
 Ziehen Sie zunächst den Detailbereich größer und klicken Sie dann auf das Grid-Symbol und dann in den Detailbereich. Klicken Sie in die untere Zeile mit der rechten Maustaste und wählen Sie Row - Select. Danach erneut Rechtsklick und Row - Delete. Sie haben nun nur noch eine Zeile mit drei Kästchen. Hinzufügen weiterer Tabellenspalten: Klicken Sie mit der rechten Maustaste in ein Kästchen und wählen Column - Add. Wiederholen Sie dies in der gewünschten Anzahl der Spalten.
 
-![Hinzufügen neuer Tabellenspalten](Bilder/TableGridColumnAdd.png "Hinzufügen neuer Tabellenspalten")
+![Hinzufügen neuer Tabellenspalten](Bilder/TableGridColumnAdd_klein.png "Hinzufügen neuer Tabellenspalten")
 
 Klicken Sie anschließend im Berichtsbaum auf das TableGrid1 und geben Sie bei den Eigenschaften für Left und Top den Wert 0 und üfr Height den Wert 13 ein.
 
@@ -136,7 +136,116 @@ Wählen Sie anschließend Label aus und klicken in die Tabellenfelder der Kopfze
 Anschließend ziehen Sie alle Felder passend in eine Reihe. Nutzen Sie dazu die blaue magnetische Hilfslinie. Zentrieren Sie die Zelle anschließend horizontal und vertikal und wählen Sie Fettdruck.
 
 ![Formatierung des DBText-Feldes](Bilder/13%20-%20Formatierung.svg "Formatierung des DBText-Feldes")
+
 Nun müssen die Tabellenfelder aus der Datenbank heraus gefüllt werden. Dafür bietet sich in den meisten Fällen ein DB Textfeld (Das A-Symbol mit der Tabelle im Hintergrund) an. Klicken Sie darauf und dann in ein Tabellenfeld im Detailbereich. Hier ist die Datenquelle des Reports (also hier Lehrer) voreingestellt.
 
-![Einfügen der Datenbankfelder in die untere Tabelle](Bilder/DBTextInTabelle.png "Einfügen der Datenbankfelder in die untere Tabelle")
+![Einfügen der Datenbankfelder in die untere Tabelle](Bilder/DBTextInTabelle_klein.png "Einfügen der Datenbankfelder in die untere Tabelle")
+
 Wählen Sie die passenden Felder außer dem Zähler und den Fächern. Bei der Anschrift wählen Sie die obere Zeile und wählen Straße aus. Die anderen Felder müssen über eine Programmierung gefüllt werden.
+
+### PLZ und Ort über eine einfache Programmierung kombinieren
+
+Wenn Sie die Postleitzahl und den Ort in eine Tabellenzelle setzen wollen, stoßen Sie auf die Schwierigkeit, dass diese nicht direkt hintereinander stehen. Dieses Problem kann man über eine einfache Programmierung lösen.  
+Wahlen Sie statt eines DBText-Feldes ein Label aus (A-Symbol ohne Tabelle im Hintergrund) und klicken in die Stelle der Tabelle im Detailbereich, in der PLZ und Ort der Lehrkräfte erscheinen soll. Merken Sie sich die Nummerierung ihres Labels. In unserem Beispiel ist es Label 9.
+
+![Vorbereitung zur Programmierung des Labels](Bilder/15%20-%20PLZ_Ort.svg "Vorbereitung zur Programmierung des Labels")
+
+Unter dem Ereignis OnGetText wird in einem einfachen Code programmiert, was in dem Label ausgegeben werden soll. Dazu bietet der Reportdesigner Hilfen an, um die entsprechenden Datenfelder der Datenbank anzusteuern.
+
+![Einfügen der Postleitzahl](Bilder/PLZ_Einfügen.svg "Einfügen der Postleitzahl")
+
+Wählen Sie in der Toolbox die Datenquelle Lehrer aus und suchen Sie unter den Elementen die PLZ und Ort. Diese Datenfelder können dann mit der Maus aus der Toolbox unten rechts in das Programmierfeld gezogen werden.
+Würden Sie beide Elemente direkt hintereinander hinziehen wird das Skript nicht kompiliert, ist also fehlerhaft. Die Syntax verlangt hier den mathematischen Operator +. Es muss also mindestens so in ihrem Programmierfeld stehen:
+
+    begin
+        Text := Lehrer['PLZ'] + Lehrer['Ort'];
+    end;
+
+Auf diese Weise erscheinen allerdings PLZ und Ort direkt aneinander ohne Leerzeichen. Diese Leerzeichen müssen wir ebenfalls über die Programmierung einbauen. Dazu verwenden Sie das Hochkomma '. Dieses rahmt Leerzeichen ein und muss natürlich auch über Pluszeichen in die Programmierung eingebunden werden. Ihre Programmierung sollte daher so lauten:
+
+    begin
+        Text := Lehrer['PLZ'] + ' ' + Lehrer['Ort'];
+    end;
+
+Durch das in Hochkommata eingeschlossene Leerzeichen wird der Abstand generiert. Hier können auch andere Sonderzeichen oder Wörter nach Belieben eingesetzt werden. Alle was in Hochkommata steht, wird als Text ausgegeben.
+
+### Einen laufenden Zähler einbauen
+
+Wählen Sie einen DBCalc (Taschenrechnersymbol mit Tabelle im Hintergrund) und klicken in den Detailbereich in die erste Zelle, die den Zähler enthalten soll.
+
+![Das DBCalc-Feld](Bilder/17%20-%20DBCalc.svg "Das DBCalc-Feld)
+
+Standardmäßig ist hier "Summe" voreingestellt, was uns hier nicht sinnvoll ist. Wir benötigen einen laufenden Zähler. Klicken Sie mit der rechten Maustaste auf das Calc-Feld und wählen Berechnungen.
+
+![Einfügen eines Zählers](Bilder/LaufenderZaehler_klein.png "Einfügen eines Zählers")
+
+In dem nun erscheinenden Menü wählen Sie oben die Option "Laufender Zähler" aus.
+
+### Fächer der Lehrer hinzufügen - Subreport mit untergeordneter Datenquelle
+
+Bisher gab es immer eindeutige Zuordnungen: Ein Lehrer hat _einen_ Namen, _einen_ Vornamen, _eine_ Adresse, _ein_ Kürzel. Im Gegensatz dazu hat ein Lehrer mehrere Fächer. Genaugenommen kann ein Lehrer ein Lehramt (z. B. Primarstufe), welchem dann diese Fächer zugeordnet sind. Theoretisch kann ein Lehrer auch mehrere Lehrämter haben, denen wiederum verschiedene Fächer zugeordnet sind.  
+Beispielsweise kann ein Lehrer die Lehrämter Sonderpädagogik und Grundschule erworben haben. Dem Lehramt Sonderpädagogik könnten die Fächer (Lehrbefähigungen) Brailleschrift und Textiles Gestalten, dem Lehramt Grundschule die Lehrbefähigungen Deutsch und Sachkunde zugeordnet sein.
+
+Eine solche Kombination ist sicherlich unwahrscheinlich, aber dennoch möglich und muss somit in der Datenbank abgebeildet werden. Man findet die Fächer der Lehrer in SchILD unter Schulverwaltung - Lehrkräfte - Details - Zeitabhängige Daten.
+Um eine solche mehrdeutige Beziehungen im Report abbilden zu können, benötigt man Unterberichte (Subreports).
+
+Wählen Sie die Option Unterbericht und klicken dann in den Detailbereich.
+
+![Symbol des Subreports](Bilder/Subreport_Symbol.svg "Symbol des Unterberichts")
+
+Klicken Sie mit der rechten Maustaste auf den nun erscheinenden Subreport1 und wählen Sie die Option "Breite der Stammkomponente" ab. Nun können Sie den Subreport kleiner ziehen und in Ihre Tabelle ziehen. Wählen Sie unten links im Reportdesigner die Karteikarte SubReport1.
+
+![Subreport wählen](Bilder/Subreport_waehlen.svg "Subreport im Karteireiter anklicken)
+
+In diesem klicken Sie wieder auf Bericht - Datenquellen und wählen die Datenquelle LehrerLehramt aus. Wählen Sie nun Bericht und deaktivieren Sie die Optionen Titel und Zusammenfassung.
+
+![Titel und Zusammenfassung abwählen](Bilder/TitelAbwaehlen_klein.png "Titel abwählen")
+
+Nun passen wir die Seite an die Dimensionen der Tabelle an. Gehen Sie dazu auf Datei - Seite einrichten. Stellen Sie bei Papiergröße die Größe des Tabellenfeldes ein. In unserem Beispiel 20x13.
+
+![Papiergröße anpassen](Bilder/Seiteneinstellungen_Papiergroesse.png "Papiergröße anpassen")
+
+Unter "Ränder" stellen Sie alle Ränder auf 0.
+
+![Ränder anpassen](Bilder/Seiteneinstellunge_Raender.png "Ränder anpassen")
+
+Klicken Sie erneut auf Bericht und dann in den kleinen Detailbereich. Sie haben nun einen Subreport im Subreport. Wählen Sie die nun neue Unterberichtskarteikarte (Subreport2) aus und stellen Sie hier die Datenquelle LehrerLehrbefaehigung ein. Stellen Siue die andere Formatierung wie gerade beim ersten Unterbericht ein. Setzen Sie in den Detailbereich ein DBText-Feld und weisen diesem die LehrbefKrz zu.
+
+![LehrbefKrz zuweisen](Bilder/LehrerLehrbef_zuweisen.png)
+
+Nun werden im Report die Fächer der Lehrer untereinander angegeben, was nicht besonders schön aussieht. Ändern sie dies im Subreport2 unter Datei - Seite einrichten - Layout
+
+![Spalten von rechts nach links durchlaufen](Bilder/Seiteneinstellunge_Spalten.png)
+
+Wählen Sie bei "Durchlaufen von:" links nach rechts und drei Spalten aus.
+
+### Sortierung der Tabelle steuern
+
+Ist die Datenquelle des Berichts nicht "Schüler", so ist die Tabelle nicht notwendigerweise richtig sortiert. Um die gewünschte Sortierung vorzunehmen, gehen Sie in den Hauptbericht und dann auf Berechnungen.
+
+![Sortierung im Bericht verändern](Bilder/SetzeSortierung_klein.png "Sortierung im Bericht verändern")
+
+Klicken Sie auf BeforeOpenDataPipelines und geben in die Programmiermaske die Sortierung ein:
+
+    begin
+        SetzeSortierung(Report.Datapipeline,'Nachname,Vorname,Geburtsdatum');
+    end;
+
+Dabei dürfen die Sortierfelder wie Name, Vorname nur ein Komma, nicht durch ein zusätzliches Leerzeichen getrennt werden. Achten Sie darauf, den Sortiernamen genau wie das Datenbankfeld zu nennen.
+Würden wir hier zuerst das Geburtsdatum setzen, hätten wir eine Geburtstagsliste gemacht.  
+Befehle wie SetzeSortierung sind auf der Webseite von SchILD-NRW dokumentiert. Sie finden sie unter der URL [RAP-Funktionen](https://wiki.svws.nrw.de/mediawiki/index.php?title=RAP-Funktionen)
+
+### Hintergrundprogrammierung zur Anpassung eines DB-Textes
+
+Bei den Telefonnummern wäre es schön, hier vor der Nummer anzugeben, ob diese Nummer zu einem Handy oder Telefon gehört und dass, wenn keine Nummer vorhanden ist, dieses auch ausgegeben wird.
+Dazu klicken Sie den DB-Text des Telefons an und gehen in die Berechnungen und hier wieder in die Berechnungen des OnGetText. Geben Sie hier ein:
+
+    begin
+        if Lehrer['Tel'] = ''
+        then Text := 'kein Telefon'
+        else Text := 'Tel: ' + Lehrer['Tel'];
+    end;
+
+Hier wird durch die Abfrage geprüft, ob bei der Telefonnummer ein Eintrag vorliegt und wenn nicht (zwei Hochkommata _ohne_ Leerzeichen dazwischen), wird ausgegeben, dass keine Nummer vorliegt. Andernfalls wird vor die Nummer ein "Tel:" gesetzt. Diese Programmierung gehört zu den Standards, die immer wieder benötigt werden. Daher passen Sie die Programmierung der Lehrerhandynummer und der E-Mailadressen (privat/dienstlich) analog an.
+
+### Tabellenspalten farbig ausgeben
