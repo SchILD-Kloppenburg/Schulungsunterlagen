@@ -63,7 +63,7 @@ Hier finden Sie die wichtigstesn Icons:
 | ![Icon Subreport](Bilder/Icon_Subreport.png) | Subreport zum Zugriff auf eine untergeordnete Datenquelle hinzufügen. Das Icon befindet sich weit rechts, bitte nicht mit dynamsich ladbaren Subreports verwechseln. |
 | ![Icon RichText](Bilder/Icon_RichText.png) | längeren formtierbaren Text (RichText) hinzufügen |
 | ![Icon Systemvariable](Bilder/Icon_Systemvariable.png) | Systemvariable hinzufügen |
-| ![Icon Variable](Bilder/Icon_Variable.png)) | Variable hinzufügen |
+| ![Icon Variable](Bilder/Icon_Variable.png) | Variable hinzufügen |
 | ![Icon DBCalc](Bilder/Icon_dbtext.png) | DBText (Datenbankfeld) hinzufügen |
 | ![Icon Graphik](Bilder/Icon_Image.png) | Graphik hinzufügen |
 | ![Icon DBImage](Bilder/Icon_dbimage.png) | in der Datenbank hinterlegte Graphik hinzufügen |
@@ -76,10 +76,24 @@ Hier finden Sie die wichtigstesn Icons:
 
 Wir wollen von der Pike auf eine Liste mit Daten über das Lehrerkollegium erstellen. Das Ergebnis soll in etwa so aussehen:
 
+![Aussehen der fertigen Lehrerliste](Bilder/AussehenLehrerliste.png "Aussehen der fertigen Lehrerliste")
+
 ### Allgemeines und Vorarbeit
 
-Die Elemente der Liste müssen also in den Detailbereich, da hier alle Datensätze „abgearbeitet“ werden. Je nachdem, was für eine Liste ausgegeben werden soll, muss die Datenquelle angepasst werden. Klicken Sie auf „Bericht“ im oberen Menu, dann „Datenquellen“ und das passende auswählen. Standard ist „Schueler“.
+Die Kopfbereich wird einmal pro Seite ausgegeben, der Fußbereich ebenso. Der Detailbereich wird für jeden Datensatz wiederholt, bis alle Daten angezeigt wurden. Die Elemente der Liste müssen also in den Detailbereich.
+
+![Struktur eines Reports](Bilder/Reportstruktur.svg "Struktur eines Reports")
+
+Die Elemente der Liste müssen also in den Detailbereich, da hier alle Datensätze „abgearbeitet“ werden. Je nachdem, was für eine Liste ausgegeben werden soll, muss die Datenquelle angepasst werden. Klicken Sie auf „Bericht“ im oberen Menü, dann „Datenquellen“ und das passende auswählen. Da SchILD ein schülerzentriertes Programm ist, ist  die Standarddatenquelle „Schueler“.
+
+![Auwahl der Datenquelle](Bilder/AuwahlDatenquelle.png "Auswahl der Datenquelle")
 
 Da wir eine Lehrerliste erstellen wollen, müssen wir logischerweise die Datenquelle „Lehrer“ auswählen.
 
 ### Kopfzeile und Fußzeile beschriften
+
+Wählen Sie ein DBTextfeld (A-Symbol mit Tabelle im Hintergrund) und klicken in den Kopfbereich des Dokuments. Ziehen Sie das Label möglichst zentriert. Klicken Sie das Feld an und wählen in den beiden Drop-down-menus am linken oberen Rand die Datenquelle "EigeneSchule" und das Datenfeld "Bezeichnung1".
+
+![Erstellen eines DBText-Feldes](Bilder/DBTextEinbinden.png "Einbinden eines DBText-Feldes")
+
+Setzen Sie darunter ein Label(A-Symbol ohne Tabelle im Hintergrund) und klicken Sie unterhalb des DBText-Feldes in den Kopfbereich. Geben Sie in den Bereich oben links "Lehrerliste" ein.
