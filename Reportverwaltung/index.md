@@ -39,7 +39,7 @@ Gehen Sie unter Extras - Programm-Einstellungen auf den Reiter Globale Einstellu
 Klicken Sie nun auf „Dateimaske bearbeiten“ und legen Sie per drag & drop die für Sie passende Verzeichnis- und Dateistruktur der Dokumentenverwaltung an. Alle Merkmale, die Sie nicht benötigen ziehen Sie hierfür in das Kästchen „Merkmale“. Zur Festlegung der Reihenfolge benutzen Sie die roten Pfeiltasten. Bestätigen Sie mit „OK“, klicken Sie auf „Dokumentenverzeichnisse für alle aktiven Schüler anlegen“ und schließen Sie die Programmeinstellungen.
 Nun sollte der Reiter oben rechts „Dokumentenverwaltung“ lauten und Sie können einen beliebigen Report in das Dokumentenverzeichnis eines Schülers mit der Einstellung „Ausgabe … nur Archivierung (in Dokumentenverwaltung)“  „Ausgabe für … den ausgewählten Schüler“ drucken, der dort als pdf-Datei hinterlegt wird.
 
-## Oberffläche des Reportdesigneres
+## Oberfläche des Reportdesigners
 
 ### Benutzeroberfläche der Reportauswahl
 
@@ -48,6 +48,27 @@ Es folgt eine Übersicht der wichtigsten Bedienelemente des Reportexplorers.
 ![wichtige Bedienelemente des Reportexploreres](Bilder/Bedienelemente.png "Die wichtigsten Bedienelemente des Reportexplorers")
 
 ### Die Oberfläche des Reportdesigners
+
+Hier sind die wichtigsten Bedienelemente des Reportdesigners aufgelistet:
+
+![Bedienelemente der Oberfläche des Reportdesigners](Bilder/Oberfläche_Reportdesigner.png "Bedienelemente der Oberfläche des Reportdesigners")
+
+Hier finden Sie die wichtigstesn Icons:
+
+| Icon | Bedeutung|
+| ----- | -----|
+| ![Icon Label](Bilder/Icon_Label.png) | Label (einifaches Textfeld) hinzufügen |
+| ![Icon DBText](Bilder/Icon_dbtext.png) | DBText (Datenbankfeld) hinzufügen |
+| ![Icon Dynamisch ladbarer Subreport](Bilder/Icon_dynSubreport.png) | Dynamisch ladbaren Subreport, z. B. Köpfe und Füße, die von mehreren Berichten genutzt werden, hinzufügen. Das Icon befindet sich weit links, bitte nicht mit Subreport verwechseln. |
+| ![Icon Subreport](Bilder/Icon_Subreport.png) | Subreport zum Zugriff auf eine untergeordnete Datenquelle hinzufügen. Das Icon befindet sich weit rechts, bitte nicht mit dynamsich ladbaren Subreports verwechseln. |
+| ![Icon RichText](Bilder/Icon_RichText.png) | längeren formtierbaren Text (RichText) hinzufügen |
+| ![Icon Systemvariable](Bilder/Icon_Systemvariable.png) | Systemvariable hinzufügen |
+| ![Icon Variable](Bilder/Icon_Variable.png)) | Variable hinzufügen |
+| ![Icon DBCalc](Bilder/Icon_dbtext.png) | DBText (Datenbankfeld) hinzufügen |
+| ![Icon Graphik](Bilder/Icon_Image.png) | Graphik hinzufügen |
+| ![Icon DBImage](Bilder/Icon_dbimage.png) | in der Datenbank hinterlegte Graphik hinzufügen |
+| ![Icon Formen](Bilder/Icon_forms.png) | Formen hinzufügen |
+| ![Icon Seiteneinstellungen](Bilder/Icon_Seiteneinstellungen.png) | Seiteneinstellungen ändern |
 
 ## Erstellung von Listen
 
@@ -60,3 +81,5 @@ Wir wollen von der Pike auf eine Liste mit Daten über das Lehrerkollegium erste
 Die Elemente der Liste müssen also in den Detailbereich, da hier alle Datensätze „abgearbeitet“ werden. Je nachdem, was für eine Liste ausgegeben werden soll, muss die Datenquelle angepasst werden. Klicken Sie auf „Bericht“ im oberen Menu, dann „Datenquellen“ und das passende auswählen. Standard ist „Schueler“.
 
 Da wir eine Lehrerliste erstellen wollen, müssen wir logischerweise die Datenquelle „Lehrer“ auswählen.
+
+### Kopfzeile und Fußzeile beschriften
