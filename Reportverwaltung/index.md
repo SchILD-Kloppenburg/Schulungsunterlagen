@@ -248,4 +248,19 @@ Dazu klicken Sie den DB-Text des Telefons an und gehen in die Berechnungen und h
 
 Hier wird durch die Abfrage geprüft, ob bei der Telefonnummer ein Eintrag vorliegt und wenn nicht (zwei Hochkommata _ohne_ Leerzeichen dazwischen), wird ausgegeben, dass keine Nummer vorliegt. Andernfalls wird vor die Nummer ein "Tel:" gesetzt. Diese Programmierung gehört zu den Standards, die immer wieder benötigt werden. Daher passen Sie die Programmierung der Lehrerhandynummer und der E-Mailadressen (privat/dienstlich) analog an.
 
-### Tabellenspalten farbig ausgeben
+### Tabellenzeilen farbig ausgeben
+
+Bei manchen Listen empfiehlt es sich zur Erhöhung der Übersichtlichkeit, dass die Tabellenzeilen unterschiedliche Farben haben.
+Klicken Sie auf den Detailbereich im Berichtsbaum. Wählen können Sie die Einfärbung der Spalten über Background1 -> Brush - Color in einem Menü auswählen. Verfahren Sie bei Backgroud2 analog.
+
+![Tabellenzeilen unterschiedlich einfärben](Bilder/Zeilen_einfaerben.png "Tabellenzeilen unterschiedlich einfärben")
+
+### Einpassen der Textelemente in eine Zelle
+
+Um die Textelemente in der Tabelle möglichst genau zu zentrieren, empfiehlt es sich, diese in der Tabelle nach allen Seiten zu verankern. Klicken Sie dazu bei Elementen, die alleine in einem Feld stehen, dieses Datenfeld an und geben im Eigenschaftenbereich unter Layout die Anchors an allen vier Seiten (aBottom, aLeft, aRight, aTop) an.
+
+![Verankerung an allen vier Zellenseiten](Bilder/Einpassen_in_Zelle.png "Verankerung an allen vier Zellenseiten")
+
+Bei Elementen, die sich ein Tabellenfeld teilen, wählen Sie bei dem oberen nur aTop, aLeft, aRight und bei dem unteren aBottom, aLeft, aRight.
+
+## Erstellen einer Schüler-Telefonliste
