@@ -339,3 +339,162 @@ Der Phantasie sind die Grenzen nur durch die Papiergröße gesetzt. Manchmal ben
 
 ## Schreiben eines Serienbriefes
 
+In den Basisreportsammlung werden auch Vorlagen für Serienbriefe sowohl an Eltern als auch an Schüler bereitgestellt, die recht bequem erstellt werden können. Speziell für diese Serienbriefe existiert im gleichen Verzeichnis auch eine ausführliche Anleitung, so dass hier nur Grundzüge erläutert werden.
+
+![Serienbrief Auswahl](Bilder/Serienbrief_Auswahl.png "Auswahl des Serienbriefes")
+
+Im Beispiel soll ein Erzieherbrief geschrieben werden, der die zukünftigen Schüler zu einem Kennenlernnachmittag einlädt. Wählen Sie dazu den Brief an die Erzieher aus. Sie werden danach gefragt, ob Sie eine Vorlage einbinden möchten, was wir zunächst nicht wollen.
+Es öffnet sich nun ein Editorfenster, in das Sie den Brieftext schreiben können. Um den Brief persönlich zu gestalten, stehen viele Variablen zur Auswahl, die bei Druck des Briefes durch entsprechende Datenbankfelder ersetzt werden. Der Brieftext könnte z. B. so aussehen:
+
+![Texteingabe des Serienbriefes](Bilder/Serienbrief_Texteingabe.png "Eingabe des Serienbriefes")
+
+Sollten Sie diesen Text des Öfteren verwenden, können Sie ihn sich vor dem Druck abspeichern und beim nächsten Mal wieder laden.
+Die Variablen $Formelle Anrede$, $Vorname$ etc. sehen nach dem Druck so aus:
+
+![Ergebnis des Serienbriefes](Bilder/Serienbrief_Ergebnis.png "Ausgabe des Serienbriefes mit ersetzten Platzhaltern")
+
+Bei den Serienbriefen liegt eine eigene Dokumentation bei, in der die Vorgehensweise und auch alle verwendbaren Variablen genau aufgelistet werden. Sie können den Briefinhalt auch mit Ihrer gewohnten Textverarbeitung erstellen. Sie müssen den Text aber im RTF-Format abspeichern („Speichern unter“).
+
+## Erstellen von Serienbriefen mit Programmierung
+
+Dieses Kapitel benötigen Sie nur, wenn Ihnen die gerade vorgestellten Serienbriefe zu unflexibel sind oder Sie genre Ihre Kenntnisse über in die Programmierung von Reports vertiefen möchten.
+
+### Notwendige Vorarbeiten
+
+Die Briefe beziehen sich auf die einzelnen Schüler der Schule, sollen aber an die Erziehungsberechtigten geschickt werden. Daher ist es notwendig, dass der Brief primär dem Schüler zugeordnet ist, aber an den Erzieher gerichtet ist. Hier muss mit einem Subreport gearbeitet werden, da es zu jedem Schüler möglicherweise mehrere Erzieher geben kann. Daher muss man mit einem Subreport arbeiten.  
+Klicken Sie auf Bericht und dann auf Kopf und Fuß, um nur noch den Detailreich anzuzeigen.
+Nun muss in diesen Bericht ein Subreport eingefügt werden, der der Datenquelle „Erzieher“ zugeordnet ist. Klicken Sie auf Unterbericht und dann in den Detailbereich.
+
+![Subreport auswählen](Bilder/Subreport_Symbol.svg "Auswählen eines Subreports")
+
+Bitte verwechseln Sie das Symbol nicht mit dem ähnlich aussehenden Symbol "Dynamisch ladbarer Subreport" auf der rechten Seite. Schieben Sie den Detailbereich dann so zusammen, dass nur noch der Subreport zu sehen ist.
+Wählen Sie über die Registerkarten im unteren linken Bildschirmbereich den Subreport1 aus.
+
+![Subreport auswählen](Bilder/Subreport_waehlen.svg "Subreport auswählen")
+
+ Diesem weisen Sie nun über „Bericht“ – „Datenquellen“ die Datenquelle „Erzieher“ zu. In diesem Subreport wird nun der eigentliche Brief geschrieben.
+
+### Nur Erzieher mit Anschreiben
+
+Der Brief soll ja nur an Erziehungsberechtigte gehen, daher an Personen, bei denen unter dem Karteireiter Erzieher auch ein Häkchen bei „Erhält Anschreiben“ gesetzt ist. Dies wird im Hauptbericht gesteuert. Gehen Sie zurück in den Hauptbericht und dann von der Entwurfs in die Berechnungsansicht. Hier wird in den Ereignissen BeforePrint und AfterPrint die Ausgabe des Briefes gesteuert. In BeforePrint muss über die Programmierung gesteuert werden, dass nur Erzieher den Brief erhalten, die auch ein Anschreiben erhalten sollen. Geben Sie hier ein:
+
+    begin
+        NurErzieherMitAnschreiben(True);
+    end;
+
+Nachdem Report vollständig kompiliert wurde, muss er wieder in den Ursprungszustand gebracht werden. Dafür muss die Operation in AfterPrint rückgängig gemacht werden. Geben Sie hier ein:
+
+    begin
+        NurErzieherMitAnschreiben(False);
+    end;
+
+Nun müssten beide Ereignisse grün erscheinen:
+
+![erfolgreiche Kompilation](Bilder/Kompilation_erfolgreich.svg "Alles ist grün, die Kompilation war erfolgreich")
+
+### Erziehergruppen
+
+Hat ein Schüler mehrere Erziehungsberechtigte, die alle ein Anschreiben erhalten sollen, muss dies im Report gesteuert werden, da ansonsten nur der erste in SchILD aufgelistete einen Brief erhalten würde. Gehen Sie auf den Supreport1:Erzieher in der Entwurfsansicht und klicken auf „Bericht“ – „Gruppen“.
+Wählen Sie im Drop-Down-Menu die Erzieher.ID und klicken auf hinzufügen. Setzten Sie dann einen Haken bei Neue Seite beginnen und bestätigen mit OK. Entfernen Sie den Hacken bei Gruppenkopf bei nachfolgenden Seiten erneut drucken.
+
+![Gruppierung der Erzieher](Bilder/Erziehergruppen.svg "Gruppieren der Erziehen, um jeweils einen neuen Brief zu drucken")
+
+### Brieftext in Richtext einbauen
+
+Den Text des eigentlichen Briefes sollte man in einem RichText eingeben. Klicken Sie auf RichText und dann in der Entwurfsansicht des Subreport1 in den Detailbereich.
+
+![RichText Symbol](Bilder/Richtext-Symbol.svg "RichText Symbol")
+
+Klicken Sie den mit der rechten Maustaste an und wählen Sie Bearbeiten. Es öffnet sich dieses Fenster:
+
+![Setzen des Hakens bei MailMerge](Bilder/MailMerge.svg "Setzen des Hakens bei MailMerge")
+
+In dem großen Feld können Sie zum einen schreiben, wie in einem Word-Dokument. Sie können hier aber auch über Datenbankabfragen einen individuellen Brieftext generieren lassen. Dazu setzen Sie oben rechts den Haken bei Mail Merge.
+
+Darunter können Sie Die Datenquellen aus der Datenbank ansteuern und darunter die entsprechenden Datenfelder auswählen. Wenn Sie an eine Stelle kommen, bei der eine Abfrage sinnvoll ist, können Sie dies hier per Doppelklick hinzufügen. Schließen Sie das Feld (X oben rechts) nach der Eingabe und bestätigen Sie die Speicherung. Ziehen Sie das Feld anschließend in der Entwurfsansicht größer, sodass der Brieftext zentriert ist. In unserem Beispiel sieht dieser nun so aus:
+
+![Voransicht Brieftext](Bilder/Voransicht_Brieftext.png "Voransicht des Brieftextes")
+
+### Eine Texteingabe (Variable) in den Text einbauen (ReplaceText)
+
+Wir wollen nun in unserem Brief eine Abfrage einbauen, die es ermöglicht, einen variablen Text einzugeben. Sie können dazu in der Bearbeitungsansicht des RichText eine Variable in den Text einbauen. Wir nennen sie in unserem Beispiel die Variable „Verhalten“. Eine Variable ist im Text durch die Einrahmung durch $-Zeichen gekennzeichnet. In unserem Text müssen wir also $Verhalten$ schreiben.
+
+Damit diese Variable auch bearbeitet wird, müssen wir in die Programmierung wechseln. Gehen Sie auf den Richtext1 und auf das Ereignis OnMailMerge.
+
+![Ereignis OnMailMerge](Bilder/OnMailMerge.png "Ereignis OnMailMerge auswählen")
+
+Geben Sie in die Programmierung das Folgende ein: (Nicht wundern, dass es noch Rot ist!)
+
+    begin
+        RichText1.RichText := ReplaceText (RichText1.RichText, '$Verhalten$',Verhalten);
+    end;
+
+Nun müssen wir die Variable noch global als solche definieren. Wechseln Sie zum Hauptbericht:Schueler und gehen in die Berechnungen. Wechseln Sie die Ansicht auf „Verwendete Module“ und klicken auf „Deklarationen“ – „Variablen“.
+
+![Vairable Definieren](Bilder/VariableDefinieren.png "Variable definieren")
+
+Wir definieren nun die Variable „Verhalten“ als Zeichenfolge, einen sogenannten String. Geben Sie bei Programmierung ein:
+
+    Verhalten: String;
+
+Wechseln Sie wieder die Ansicht auf „Ereignisse“ und gehen in die Operation „Report“ – „BeforePrint“. Hier sollten schon bspw. die Erzieher mit Anschreiben Programmierung stehen. Gehen Sie eine Zeile darunter und implementieren Sie die Textabfrage. Sie geben hier den Befehl, dass ein Texteingabefeld generiert werden soll und in unserem Falle einen sprachlichen Hinweis, der den Anfang des Satzes beschreibt. Schreiben Sie:
+
+    begin
+        Verhalten := Stringinput('Bitte das Fehlverhalten benennen: (...zu erwähnen, dass er/sie: ','');
+    end;
+
+Da ja bei Jedem Schüler der Text angepasst werden soll, muss dieser vor jeder Reporterzeugung gesichert werden und danach wieder in den Ursprungszustand geschrieben werden. Dazu gehen Sie im Supreport1:Erzieher in den Detailbereich und wechseln in die Berechnungsansicht. Klicken Sie auf den Detailbereich und Programmieren diese Sicherung, bzw. Wiederherstellung des Richtextextes in den Ereignissen BeforePrint und AfterPrint.
+
+![Richtext in BeforePrint sichern](Bilder/SaveTextInBeforePrint.png "RichText in BeforePrint sichern")
+
+Schreiben Sie bei BeforePrint:
+
+    begin
+        SaveText := Richtext1.Richtext;
+    end;
+
+Schreiben Sie bei AfterPrint:
+
+    begin
+        Richtext1.Richtext := SaveText;
+    end;
+
+Sie müssen nun noch SaveText als Variable definieren. Gehen Sie auf den Hauptbericht und auf Berechnungen. Wechseln Sie die Ansicht auf Verwendete Module. Klicken Sie wieder auf Deklarationen - Variables und geben hier ein: (Sollte hier schon etwas stehen, einfach eine neue Zeile aufmachen.)
+
+    SaveText: String;
+
+Nun ist Ihre Anfrage komplett.
+
+### Eine Datumsabfrage in den Text einbauen
+
+Wir wollen nun vor der Abfrage des Fehlverhaltens noch eine Datumsauswahl einbauen, damit wir dies auch klar benennen können. Also brauchen wir eine weitere Variable. Gehen Sie auf den Hauptbericht und auf Berechnungen. Wechseln Sie die Ansicht auf Verwendete Module. Klicken Sie wieder auf Deklarationen - Variables und geben hier ein: (Sollte hier schon etwas stehen, einfach eine neue Zeile aufmachen.)
+
+    Datum: String;
+
+Gehen Sie nun in den Subreport1:Erzieher in die Entwurfsansicht und geben die Variable im RichText ein. In unserem Beispiel lautet dieser nun:
+
+    <dbtext>FormaleAnrede</dbtext>
+    wir bedauern Ihnen mitteilen zu müssen, dass es <dbtext datapipeline='Schueler'>SohnOderTocherDativ</dbtext> <dbtext datapipeline='Schueler'>Vorname</dbtext> leider weiterhin schwer fällt sich an bestehende und bekannte Klassenregeln zu halten. Besonders ist hier zu erwähnen, dass <dbtext datapipeline='Schueler'>ErSieKlein</dbtext> am $Datum$ $Verhalten$.
+
+Gehen Sie nun in die Berechnungen des Hauptberichtes und wählen den Report und das Ereignis BeforePrint. Geben Sie ein:
+
+    Datum := WaehleDatumStr('Wann fand das Fehlverhalten statt?', true);
+
+Nun muss noch die Ersetzung des Textes im RichText1 programmiert werden. Gehen Sie in den Subreport1 und auf Berechnungen und klicken beim Element Richtext1 auf das Ereignis MailMerge. Geben Sie hier ein:
+
+    RichText1.RichText := ReplaceText (RichText1.RichText, '$Datum$',Datum);
+
+Sollten Sie mehrere Abfragen implementiert haben, wäre es sinnvoll diese in der richtigen Reihenfolge einzugeben. Bei unserem Beispielbrief steht hier also:
+
+    begin
+        RichText1.RichText := ReplaceText (RichText1.RichText, '$Datum$',Datum);
+        RichText1.RichText := ReplaceText (RichText1.RichText, '$Verhalten$',Verhalten);
+    end;
+
+Nun sollen Sie nach dem Datum in Form einer Abfrage gefragt werden.
+
+### Den Briefkopf setzen (dynamisch ladbarer Subreport/Header_Footer)
+
+Den Briefkopf bei jedem Brief neu zu gestalten ist letztlich nicht sinnvoll, da man ja ansonsten in jedem Dokument jede Änderung manuell eingeben müsste. Deshalb gibt es sogenannte „dynamisch ladbare Subreports“. Dies sind kleine Unterberichte (Bspw. Briefköpfe, Listenfüße, etc.) die im Schildinstallationsverzeichnis unter SchILD-Reports - Header_Footer abgelegt sein müssen.  
+Sie können einen solchen Subreport sehr einfach einbinden. Gehen Sie in die auf das Symbol hierfür. Verwechseln Sie es bitte nicht mit dem Symbol für den „nomalen“ Subreport, es ist leider das gleiche Symbol.
+
