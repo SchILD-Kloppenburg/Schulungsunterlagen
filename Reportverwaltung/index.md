@@ -2,7 +2,9 @@
 
 ## Vorbemerkungen
 
-Diese Schulungsunterlagen begleiten die Schulung zum Umgang mit dem Formularexplorer. Es wird beschrieben, wie man fremde Reports einbinden kann, vor allem aber, wie man eigene Reports von der Pike auf erstellen kann
+Diese Schulungsunterlagen begleiten die Schulung zum Umgang mit dem Formularexplorer. Es wird beschrieben, wie man fremde Reports einbinden kann, vor allem aber, wie man eigene Reports von der Pike auf erstellen kann.
+
+Am ersten Tag wird eine Lehrerliste erstellt, bei der alle grundlegenden Techniken und die wichtigsten Formatierung erläuternt werden. Am zweiten Tag werden Schülerliste erstellt und auf deren Besonderheiten eingegangen.
 
 ## Allgemeine Hilfe
 
@@ -498,3 +500,29 @@ Nun sollen Sie nach dem Datum in Form einer Abfrage gefragt werden.
 Den Briefkopf bei jedem Brief neu zu gestalten ist letztlich nicht sinnvoll, da man ja ansonsten in jedem Dokument jede Änderung manuell eingeben müsste. Deshalb gibt es sogenannte „dynamisch ladbare Subreports“. Dies sind kleine Unterberichte (Bspw. Briefköpfe, Listenfüße, etc.) die im Schildinstallationsverzeichnis unter SchILD-Reports - Header_Footer abgelegt sein müssen.  
 Sie können einen solchen Subreport sehr einfach einbinden. Gehen Sie in die auf das Symbol hierfür. Verwechseln Sie es bitte nicht mit dem Symbol für den „nomalen“ Subreport, es ist leider das gleiche Symbol.
 
+![Symbol für dynamisch ladbaren Subreport](Bilder/DynLadbarerSubreport.svg "Symbol für dynamisch ladbaren Subreport")
+
+Ziehen Sie nun den Bereich zwischen Titel und Gruppenkopf ein wenig auseinander und klicken mit links hier hinein. Nun müsste der Subreport vorhanden sein:
+
+![Dynamisch ladbaren Subreport einfügen](Bilder/DynSubreportEinfuegen.png "dynamisch ladbaren Subreport einfügen")
+
+Klicken Sie mit rechts auf den Subreport und dann auf „Subreportdatei wählen“. Es öffnet sich ein Windowsfenster im Ordner Header_Footer. Wählen Sie bspw. den Brief_Kopf_Eltern.rtm und klicken auf „öffnen“.
+
+![Dynamsich ladbaren Subreport auswählen](Bilder/DynSubreportAuswaehlen.png "dynamisch ladbaren Subreport auswählen")
+
+Analog setzten Sie in den Gruppenfuß den Dynamisch ladbaren Subreport Brief-Unterschrift_SL.rtm
+
+### Betreffzeile eingeben und Schönheitsanpassungen
+
+Gehen Sie in den Subreport1:Erzieher in den Detailbereich und klicken mit der rechten Maustaste in einen leeren Bereich. Dort wählen Sie für diesen eine Statische Höhe anstatt der standardmäßig gesetzten dynamischen Höhe. Ziehen Sie den Detailbereich dann etwas größer und platzieren oben Rechts ein Label.  
+Merken Sie sich die Nummer des Labels und wechseln in die Programmieransicht. Gehen Sie nun auf Berechnungen und wählen für das Label das Ereignis OnGetText und klicken in den Programmierbereich.
+
+Geben Sie hier nun Mithilfe der Datenquellen (siehe Punkt 7.7 in diesem Dokument) den folgenden Ausdruck ein:
+
+    begin
+        Text := 'Betreff: Fehlverhalten ' + Schueler['SohnOderTocherGenitiv'] + ' ' + Schueler['VornameName'] + ', Klasse ' + Schueler['Klasse'];
+    end;
+
+Sie können nun noch weiter die Felder passend ziehen und die Schriftgrößen angleichen. Fertig. Ihr Brief sollte nun mit den Abfragen ungefähr so aussehen:
+
+![Voransicht des Serienbriefes](Bilder/Fehlverhalten_Ergebnis.png "Voransicht des Serienbriefes")
