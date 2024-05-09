@@ -16,8 +16,8 @@ Wie immer gibt es Hilfen im Netz für den Umgang mit SchILD. Hier sind die wicht
 
 ## Reports
 
-Gehen Sie auf der Website „Schulverwaltung NRW - IT-Anwendungen“ (svws.nrw.de) auf DOWNLOAD - SchILD-NRW - SchILD-Reports - Einzelreports - Alle Schulformen, laden Sie den Report „masernimpfnachweise.rtm“ herunter und entpacken/extrahieren Sie diesen im Ordner „downloads“.
-Öffnen Sie über Druckausgabe den Report-Explorer und legen Sie unter dem Ordner „SchILD-Reports“ ein Unterverzeichnis mit beliebigem Namen an. Ziehen Sie jetzt per drag & drop die beiden heruntergeladenen rtm-Dateien in das rechte weiße Feld.
+Gehen Sie auf der Website "Schulverwaltung NRW - IT-Anwendungen" (svws.nrw.de) auf DOWNLOAD - SchILD-NRW - SchILD-Reports - Einzelreports - Alle Schulformen, laden Sie den Report "masernimpfnachweise.rtm" herunter und entpacken/extrahieren Sie diesen im Ordner "downloads".
+Öffnen Sie über Druckausgabe den Report-Explorer und legen Sie unter dem Ordner "SchILD-Reports" ein Unterverzeichnis mit beliebigem Namen an. Ziehen Sie jetzt per drag & drop die beiden heruntergeladenen rtm-Dateien in das rechte weiße Feld.
 
 ![Graphik zum Einbinden von Reports](Bilder/Report_einbinden.png "Einbinden von Reports")
 
@@ -25,21 +25,21 @@ Alternativ können Sie die beiden rtm-Dateien kopieren und unter C:\Users\…\Do
 
 ## Schnellzugriff einrichten
 
-Gehen Sie unter Extras - Programm-Einstellungen auf den Reiter Globale Einstellungen - Report-Einstellungen - Schnellzugriff und aktivieren Sie „Schnellzugriff ermöglichen“. Klicken Sie jeweils auf den gelben Ordner und weisen Sie aus dem Verzeichnis „C:\Users\…\Downloads\SchILDNRW_Install\ SchILDNRW_Install\Schild-Programm\SchILD-Reports“ zwei bis drei Reports Ihrer Wahl zu und wählen Sie eine Schalterbeschriftung.
+Gehen Sie unter Extras - Programm-Einstellungen auf den Reiter Globale Einstellungen - Report-Einstellungen - Schnellzugriff und aktivieren Sie "Schnellzugriff ermöglichen". Klicken Sie jeweils auf den gelben Ordner und weisen Sie aus dem Verzeichnis "C:\Users\…\Downloads\SchILDNRW_Install\ SchILDNRW_Install\Schild-Programm\SchILD-Reports" zwei bis drei Reports Ihrer Wahl zu und wählen Sie eine Schalterbeschriftung.
 
 ![Schnellzugriff einrichten](Bilder/Schnellzugriff_einrichten.png "Schnellzugriff einrichten")
 
-Es erscheint nun sofort und bei jedem Start des Programmes der Report-Schnellzugriff. Sie können nun eine Ihrer erstellten Reportverbindungen anklicken und den Report drucken. Sollten Sie im Container alle Schüler ausgewählt haben ist natürlich die „Ausgabe für … die ganze Gruppe“ nicht zu empfehlen. Schauen Sie sich also lieber nur die Vorschau an.
+Es erscheint nun sofort und bei jedem Start des Programmes der Report-Schnellzugriff. Sie können nun eine Ihrer erstellten Reportverbindungen anklicken und den Report drucken. Sollten Sie im Container alle Schüler ausgewählt haben ist natürlich die "Ausgabe für … die ganze Gruppe" nicht zu empfehlen. Schauen Sie sich also lieber nur die Vorschau an.
 Oben rechts können Sie den Report-Schnellzugriff schließen und jederzeit mit einem Klick auf "Drucken" wieder öffnen.
 
 ## Dokumentenverwaltung einrichten
 
-Gehen Sie unter Extras - Programm-Einstellungen auf den Reiter Globale Einstellungen - Dokumentenverwaltung und aktivieren Sie die Dokumentenverwaltung. Klicken Sie nun unter „Dokumentenverzeichnis“ auf den gelben Ordner und legen einen für Sie passen Pfad fest. Da voreingestellt für alle Schüler der Testdatenbank auf Ihrem Rechner unter C:\ ein Verzeichnis angelegt wird, bietet es sich an, einen Ordner „Dokumentenverwaltung“ in unserem Testprogrammordner anzulegen. Den können Sie später auch einfach wieder löschen.
+Gehen Sie unter Extras - Programm-Einstellungen auf den Reiter Globale Einstellungen - Dokumentenverwaltung und aktivieren Sie die Dokumentenverwaltung. Klicken Sie nun unter "Dokumentenverzeichnis" auf den gelben Ordner und legen einen für Sie passen Pfad fest. Da voreingestellt für alle Schüler der Testdatenbank auf Ihrem Rechner unter C:\ ein Verzeichnis angelegt wird, bietet es sich an, einen Ordner "Dokumentenverwaltung" in unserem Testprogrammordner anzulegen. Den können Sie später auch einfach wieder löschen.
 
 ![Einrichten der Dokumentenverwaltung](Bilder/Dokumentenverwaltung_einrichten.png "Dokumentenverwaltung einrichten")
 
-Klicken Sie nun auf „Dateimaske bearbeiten“ und legen Sie per drag & drop die für Sie passende Verzeichnis- und Dateistruktur der Dokumentenverwaltung an. Alle Merkmale, die Sie nicht benötigen ziehen Sie hierfür in das Kästchen „Merkmale“. Zur Festlegung der Reihenfolge benutzen Sie die roten Pfeiltasten. Bestätigen Sie mit „OK“, klicken Sie auf „Dokumentenverzeichnisse für alle aktiven Schüler anlegen“ und schließen Sie die Programmeinstellungen.
-Nun sollte der Reiter oben rechts „Dokumentenverwaltung“ lauten und Sie können einen beliebigen Report in das Dokumentenverzeichnis eines Schülers mit der Einstellung „Ausgabe … nur Archivierung (in Dokumentenverwaltung)“  „Ausgabe für … den ausgewählten Schüler“ drucken, der dort als pdf-Datei hinterlegt wird.
+Klicken Sie nun auf "Dateimaske bearbeiten" und legen Sie per drag & drop die für Sie passende Verzeichnis- und Dateistruktur der Dokumentenverwaltung an. Alle Merkmale, die Sie nicht benötigen ziehen Sie hierfür in das Kästchen "Merkmale". Zur Festlegung der Reihenfolge benutzen Sie die roten Pfeiltasten. Bestätigen Sie mit "OK", klicken Sie auf "Dokumentenverzeichnisse für alle aktiven Schüler anlegen" und schließen Sie die Programmeinstellungen.
+Nun sollte der Reiter oben rechts "Dokumentenverwaltung" lauten und Sie können einen beliebigen Report in das Dokumentenverzeichnis eines Schülers mit der Einstellung "Ausgabe … nur Archivierung (in Dokumentenverwaltung)"  "Ausgabe für … den ausgewählten Schüler" drucken, der dort als pdf-Datei hinterlegt wird.
 
 ## Oberfläche des Reportdesigners
 
@@ -86,11 +86,11 @@ Die Kopfbereich wird einmal pro Seite ausgegeben, der Fußbereich ebenso. Der De
 
 ![Struktur eines Reports](Bilder/Reportstruktur.svg "Struktur eines Reports")
 
-Die Elemente der Liste müssen also in den Detailbereich, da hier alle Datensätze „abgearbeitet“ werden. Je nachdem, was für eine Liste ausgegeben werden soll, muss die Datenquelle angepasst werden. Klicken Sie auf „Bericht“ im oberen Menü, dann „Datenquellen“ und das passende auswählen. Da SchILD ein schülerzentriertes Programm ist, ist  die Standarddatenquelle „Schueler“.
+Die Elemente der Liste müssen also in den Detailbereich, da hier alle Datensätze "abgearbeitet" werden. Je nachdem, was für eine Liste ausgegeben werden soll, muss die Datenquelle angepasst werden. Klicken Sie auf "Bericht" im oberen Menü, dann "Datenquellen" und das passende auswählen. Da SchILD ein schülerzentriertes Programm ist, ist  die Standarddatenquelle "Schueler".
 
 ![Auwahl der Datenquelle](Bilder/AuwahlDatenquelle.png "Auswahl der Datenquelle")
 
-Da wir eine Lehrerliste erstellen wollen, müssen wir logischerweise die Datenquelle „Lehrer“ auswählen.
+Da wir eine Lehrerliste erstellen wollen, müssen wir logischerweise die Datenquelle "Lehrer" auswählen.
 
 ### Kopfzeile und Fußzeile beschriften
 
@@ -292,7 +292,7 @@ Die Lösung ist, dass der Bericht nach Klassen gruppiert wird. Dazu muss man im 
 
 ![Einfügen einer Gruppierung nach Klasse](Bilder/GruppierungKlasse.png "Einfügen einer Gruppierung mit Seitenumbruch nach einem Klassenwechsel")
 
-Wählen Sie das Datenfeld "Schueler.Klasse" und klicken Sie auf "Hinzufügen". In einem zweiten Schritt können die unteren Kästchen angeklickt werden. Wir wollen bei Erreichen der nächsten Klasse einen Seitenumbruch einfügen. In dieser Einstellung wird, sobald sich die Klasse ändert, ein Seitenumbruch eingefügt. Falls Sie gerne doppelseitig drucken und Sie nicht möchten, dass auf der Vorderseite die 5A und auf der Rückseite die 5B auftaucht, klicken Sie zusätzlich auf „Start on odd page“.  
+Wählen Sie das Datenfeld "Schueler.Klasse" und klicken Sie auf "Hinzufügen". In einem zweiten Schritt können die unteren Kästchen angeklickt werden. Wir wollen bei Erreichen der nächsten Klasse einen Seitenumbruch einfügen. In dieser Einstellung wird, sobald sich die Klasse ändert, ein Seitenumbruch eingefügt. Falls Sie gerne doppelseitig drucken und Sie nicht möchten, dass auf der Vorderseite die 5A und auf der Rückseite die 5B auftaucht, klicken Sie zusätzlich auf "Start on odd page".  
 Jetzt wird für jede Klasse eine neue Seite begonnen. Allerdings kann es weiterhin passieren, dass Schülerdaten beim Seitenumbruch auseinandergerissen werden und die Daten teils auf der einen, teils auf der anderen Seite landen.
 
 ![Schülerdaten werden durch einen Seitenumbruch auseinandergerissen](Bilder/GruppierungSeitenumbruch.png "Schülerdaten werden durch einen Seitenumbruch auseinandergerissen")
@@ -303,6 +303,60 @@ Wählen Sie wiederum "Bericht" – "Gruppen", klicken Sie erst auf "Hinzufügen"
 ![Schülerdaten werden zusammengehalten](Bilder/GruppierenSchüler.png "Schülerdaten werden zusammengehalten")
 
 Diese Einstellungen bewirken, dass alle Daten, die zu einem Schüler gehören, zusammen auf einer Seite erscheinen und zwischendurch kein Seitenumbruch stattfindet. Dazu muss man zwei Schüler eindeutig voneinander unterscheiden können. Der Nachname reicht dabei nicht notwendigerweise aus, denn auch Zwillinge in einer Klasse haben den gleichen Nachnamen. Zur Unterscheidung eignet sich immer die ID eines Schülers. Die ID ist eine Schülernummer, die Schild-NRW automatisch generiert und die garantiert eindeutig ist. Mit diesen beiden Angaben sollte die Telefonliste wie gewünscht funktionieren.
+
+### Zugriff auf Objekteigenschaften mittels Programmierung
+
+Auf alle Eigenschaften eines Elements, die Sie im Eigenschaftenfenster sehen, können Sie über die Programmierung zugreifen und diese verändern. Als Beispiel soll eine Liste erstellt werden, in denen der Status der Masernschutzimpfung ausgegeben wird. Dazu erstellen wir eine neue Liste mit Schülernamen und dem Status der Masernschutzimpfung. Diese findet man normalerweise über ein Datenbankfeld, hier soll aber ein Label programmiert werden. Fügen Sie also ein Label in den Detailbereich ein.
+
+Bei komplexen Reports kann es sehr sinnvoll sein, einzelne Elemente wir Label, DBTexte etc. mit besonderen Namen zu versehen. Dies kann die Übersichtlichkeit enorm steigern. Klicken Sie beispielsweise auf ein Label oder jedes andere Element, dass Sie umbenennen wollen und gehen Sie im linken unteren Bildschirmrand auf die Eigenschaften des Objektes in der Entwurfsansicht.  Hier können alle Elemente unter dem Bezeichner UserName umbenannt werden.
+
+![Username ändern](Bilder/UserNameAendern.png "Bezeichnung des Labels ändern")
+
+Es kann in einigen Fällen sinnvoll sein, bestimmte Merkmale in einer Liste hervorzuheben, bzw. kenntlich zu machen. Am Beispiel des "Masernimpfnachweises" soll dies hier illustriert werden. Dieser liegt in der Datenbank als String-Wert in Form eines + oder – vor, also vorhanden und nicht vorhanden.  
+In einem DBText-Feld, welches die Bezeichnung "LMasern" von uns erhalten hat, wird eine Programmierung eingebaut, die dafür sorgt, dass ungeimpfte Schülerinnen und Schüler den fett und rot gedruckten Hinweis erhalten, dass sie keinen Impfschutz besitzen. Die geimpften erhalten in normal gedruckten grünen Lettern den Hinweis, dass ein Impfschutz vorhanden ist.
+
+![Voransicht des Masernschutzliste](Bilder/Masernschutz_Ergebnis.png "Voransicht der Masernschutzliste")
+
+Dies kann in zwei Schritten umgesetzt werden. Zum einen muss dem Label LMasern ein Text zugewiesen werden. Die kann nur über das Ereignis OnGetText geschehen. Der Code sieht dabei so aus:
+
+    Procedure LMasernOnGetText(var Text: String);
+    begin
+        if Schueler['MasernImpfnachweis'] = '-'
+        then
+            Text := 'kein Masernschutz'
+        else
+            Text := 'Masernschutz vorhanden';
+    end;
+
+Weiterhin muss dem Text auch das Format zugewiesen werden. Diese unterscheidet sich allerdings von der Logik, wie Elemente angesporchen werden. Prinzipiell kann man auch versuchen, die Formatierung über OnGetText durchzuführen. Allerdings ist diese dann schon vorgenommen worden, so dass die Formatierung dann erst beim nächsten Schüler angewendet wird.
+Statt dessen verwendet man die Methode OnPrint:
+
+    Procdeure LMasernOnPrint;
+    begin
+        if Schueler['MasernImpfnachweis'] = '-'
+        then
+        begin
+            LMasern.Font.Color := clRed;
+            LMasern.Font.Bold := true;
+        end
+        else
+        begin
+            LMasern.Font.Color := clGreen;
+            LMasern.Font.Bold := false;
+        end;
+    end;
+
+Wollen Sie dagegen eine Liste haben, bei der die nur die ungeimpften Schüler ausgegeben werden, kann man das über die Eigenschaft "visible" erreichen. Diese soll sich auf die gesamt Detailzeile auswirken. Geben Sie beim Objekt "Detail" in dem Ergeignis "DetailBeforePrint" folgendes ein:
+
+    if Schueler['MasernImpfnachweis'] = '-'
+    then
+        detail.visible := true
+    else
+        detail.visible := false;
+
+Wer Programmiererfahrugn hat, kann dies auch abkürzen:
+
+    detail.visible := (Schueler['MasernImpfnachweis'] = '-');
 
 ## Kreuztabellen
 
@@ -317,14 +371,14 @@ Klicken Sie nun mit der rechten Maustaste auf das Element CorssTab und wählen "
 
 ![Konfiguration der ersten Kreuztabelle](Bilder/Kreuztabelle-Konfiguration.svg "Konfiguration der ersten Kreuztabelle")
 
-In der linken Spalte sehen Sie die Felder, die sie auswerten können. Unglücklicherweise sind die Felder nicht alphabetisch sortiert, so dass man ab und zu Mühe hat, die richtigen Felder zu finden. Als Faustregel können Sie sich merken, dass die Felder in chronologischer Reihenfolge erscheinen. Wichtige Felder erscheinen oben, später hinzugekommene wie „MasernImpfnachweis“ viel weiter unten.
+In der linken Spalte sehen Sie die Felder, die sie auswerten können. Unglücklicherweise sind die Felder nicht alphabetisch sortiert, so dass man ab und zu Mühe hat, die richtigen Felder zu finden. Als Faustregel können Sie sich merken, dass die Felder in chronologischer Reihenfolge erscheinen. Wichtige Felder erscheinen oben, später hinzugekommene wie "MasernImpfnachweis" viel weiter unten.
 
-Suchen Sie nun das Feld „Klasse“ und ziehen Sie es an die Stelle „Neue Zeile“ wie in Abbildung 26. Ziehen Sie nun das Feld „ID“ an die Stelle „Neuer Wert“. Ändern Sie nun die Berechnung von „Summe“ in „Laufender Zähler“. Wenn Sie nun mit „OK“ bestätigt haben, finden Sie in der Vorschau Sie nun die Ausgabe wie in der nächsten Abbildung.
+Suchen Sie nun das Feld "Klasse" und ziehen Sie es an die Stelle "Neue Zeile" wie in Abbildung 26. Ziehen Sie nun das Feld "ID" an die Stelle "Neuer Wert". Ändern Sie nun die Berechnung von "Summe" in "Laufender Zähler". Wenn Sie nun mit "OK" bestätigt haben, finden Sie in der Vorschau Sie nun die Ausgabe wie in der nächsten Abbildung.
 
 ![Vorschau der Kreuztabelle](Bilder/Kreuztabelle-Vorschau.png "Vorschau der Kreuztabelle")
 
-Das sieht vielversprechend aus. Zu jeder Klasse wird die Anzahl der Schüler ausgegeben. Allerdings taucht die Kreuztabelle wiederholt auf. In der jetzigen Einstellung wird für jeden Schüler eine eigene Kreuztabelle ausgegeben. Das liegt daran, dass die Datenquelle des Berichts „Schüler“ ist und somit für jeden vorkommenden Schüler der Detailbereich – und damit die Kreuztabelle – erneut ausgegeben wird.  
-Da die Kreuztabelle nur einmal ausgegeben werden soll, stellen Sie die Datenquelle des Berichts auf „keine“. Trotzdem sollen in der Kreuztabelle die Schüler ausgewertet werden, so dass wir diese Datenquelle nur der Kreuztabelle zuweisen. Markieren Sie in der Entwurfsansicht die Kreuztabelle und stellen Sie oben die Datenquelle für die Schüler ein.
+Das sieht vielversprechend aus. Zu jeder Klasse wird die Anzahl der Schüler ausgegeben. Allerdings taucht die Kreuztabelle wiederholt auf. In der jetzigen Einstellung wird für jeden Schüler eine eigene Kreuztabelle ausgegeben. Das liegt daran, dass die Datenquelle des Berichts "Schüler" ist und somit für jeden vorkommenden Schüler der Detailbereich – und damit die Kreuztabelle – erneut ausgegeben wird.  
+Da die Kreuztabelle nur einmal ausgegeben werden soll, stellen Sie die Datenquelle des Berichts auf "keine". Trotzdem sollen in der Kreuztabelle die Schüler ausgewertet werden, so dass wir diese Datenquelle nur der Kreuztabelle zuweisen. Markieren Sie in der Entwurfsansicht die Kreuztabelle und stellen Sie oben die Datenquelle für die Schüler ein.
 
 ![Einstellen der Datenquelle für die Kreuztabelle](Bilder/Kreuztabelle-Konfiguration2.svg "Einstellen der Datenquelle für die Kreuztabelle")
 
@@ -336,7 +390,7 @@ Das bisherige Beispiel soll nun erweitert werden. Es soll zusätzlich noch ausge
 
 ![Ein komplexeres Beispiel für eine Kreuztabelle](Bilder/Kreuztabelle-Konfiguration3.png "Ein komplexeres Beispiel für eine Kreuztabelle")
 
-Achten Sie darauf, die Felder „ASDJahrgang“ statt „Jahrgang“ sowie „GeschlechtMW“ statt „Geschlecht“ zu verwenden. Schauen Sie sich nun die Vorschau an. Sie haben mit relativ einfachen Mitteln eine Übersicht geschaffen.
+Achten Sie darauf, die Felder "ASDJahrgang" statt "Jahrgang" sowie "GeschlechtMW" statt "Geschlecht" zu verwenden. Schauen Sie sich nun die Vorschau an. Sie haben mit relativ einfachen Mitteln eine Übersicht geschaffen.
 Der Phantasie sind die Grenzen nur durch die Papiergröße gesetzt. Manchmal benötigt man statistische Auswertungen wie Religionsübersichten, Verteilung der Wohnorte oder Förderschwerpunkte. Wenn die Übersicht zu groß wird, kann man auch mit einer Umstrukturierung der Tabelle etwas Übersichtlichkeit schaffen. Die Namen der Wohnorte können recht lang werden, so dass es sich anbietet, diese untereinander zu schreiben. Die Namen der Klassen sind kurz, so dass diese nebeneinander angeordnet werden können.
 
 ## Schreiben eines Serienbriefes
@@ -355,7 +409,7 @@ Die Variablen $Formelle Anrede$, $Vorname$ etc. sehen nach dem Druck so aus:
 
 ![Ergebnis des Serienbriefes](Bilder/Serienbrief_Ergebnis.png "Ausgabe des Serienbriefes mit ersetzten Platzhaltern")
 
-Bei den Serienbriefen liegt eine eigene Dokumentation bei, in der die Vorgehensweise und auch alle verwendbaren Variablen genau aufgelistet werden. Sie können den Briefinhalt auch mit Ihrer gewohnten Textverarbeitung erstellen. Sie müssen den Text aber im RTF-Format abspeichern („Speichern unter“).
+Bei den Serienbriefen liegt eine eigene Dokumentation bei, in der die Vorgehensweise und auch alle verwendbaren Variablen genau aufgelistet werden. Sie können den Briefinhalt auch mit Ihrer gewohnten Textverarbeitung erstellen. Sie müssen den Text aber im RTF-Format abspeichern ("Speichern unter").
 
 ## Erstellen von Serienbriefen mit Programmierung
 
@@ -365,7 +419,7 @@ Dieses Kapitel benötigen Sie nur, wenn Ihnen die gerade vorgestellten Serienbri
 
 Die Briefe beziehen sich auf die einzelnen Schüler der Schule, sollen aber an die Erziehungsberechtigten geschickt werden. Daher ist es notwendig, dass der Brief primär dem Schüler zugeordnet ist, aber an den Erzieher gerichtet ist. Hier muss mit einem Subreport gearbeitet werden, da es zu jedem Schüler möglicherweise mehrere Erzieher geben kann. Daher muss man mit einem Subreport arbeiten.  
 Klicken Sie auf Bericht und dann auf Kopf und Fuß, um nur noch den Detailreich anzuzeigen.
-Nun muss in diesen Bericht ein Subreport eingefügt werden, der der Datenquelle „Erzieher“ zugeordnet ist. Klicken Sie auf Unterbericht und dann in den Detailbereich.
+Nun muss in diesen Bericht ein Subreport eingefügt werden, der der Datenquelle "Erzieher" zugeordnet ist. Klicken Sie auf Unterbericht und dann in den Detailbereich.
 
 ![Subreport auswählen](Bilder/Subreport_Symbol.svg "Auswählen eines Subreports")
 
@@ -374,11 +428,11 @@ Wählen Sie über die Registerkarten im unteren linken Bildschirmbereich den Sub
 
 ![Subreport auswählen](Bilder/Subreport_waehlen.svg "Subreport auswählen")
 
- Diesem weisen Sie nun über „Bericht“ – „Datenquellen“ die Datenquelle „Erzieher“ zu. In diesem Subreport wird nun der eigentliche Brief geschrieben.
+ Diesem weisen Sie nun über "Bericht" – "Datenquellen" die Datenquelle "Erzieher" zu. In diesem Subreport wird nun der eigentliche Brief geschrieben.
 
 ### Nur Erzieher mit Anschreiben
 
-Der Brief soll ja nur an Erziehungsberechtigte gehen, daher an Personen, bei denen unter dem Karteireiter Erzieher auch ein Häkchen bei „Erhält Anschreiben“ gesetzt ist. Dies wird im Hauptbericht gesteuert. Gehen Sie zurück in den Hauptbericht und dann von der Entwurfs in die Berechnungsansicht. Hier wird in den Ereignissen BeforePrint und AfterPrint die Ausgabe des Briefes gesteuert. In BeforePrint muss über die Programmierung gesteuert werden, dass nur Erzieher den Brief erhalten, die auch ein Anschreiben erhalten sollen. Geben Sie hier ein:
+Der Brief soll ja nur an Erziehungsberechtigte gehen, daher an Personen, bei denen unter dem Karteireiter Erzieher auch ein Häkchen bei "Erhält Anschreiben" gesetzt ist. Dies wird im Hauptbericht gesteuert. Gehen Sie zurück in den Hauptbericht und dann von der Entwurfs in die Berechnungsansicht. Hier wird in den Ereignissen BeforePrint und AfterPrint die Ausgabe des Briefes gesteuert. In BeforePrint muss über die Programmierung gesteuert werden, dass nur Erzieher den Brief erhalten, die auch ein Anschreiben erhalten sollen. Geben Sie hier ein:
 
     begin
         NurErzieherMitAnschreiben(True);
@@ -396,7 +450,7 @@ Nun müssten beide Ereignisse grün erscheinen:
 
 ### Erziehergruppen
 
-Hat ein Schüler mehrere Erziehungsberechtigte, die alle ein Anschreiben erhalten sollen, muss dies im Report gesteuert werden, da ansonsten nur der erste in SchILD aufgelistete einen Brief erhalten würde. Gehen Sie auf den Supreport1:Erzieher in der Entwurfsansicht und klicken auf „Bericht“ – „Gruppen“.
+Hat ein Schüler mehrere Erziehungsberechtigte, die alle ein Anschreiben erhalten sollen, muss dies im Report gesteuert werden, da ansonsten nur der erste in SchILD aufgelistete einen Brief erhalten würde. Gehen Sie auf den Supreport1:Erzieher in der Entwurfsansicht und klicken auf "Bericht" – "Gruppen".
 Wählen Sie im Drop-Down-Menu die Erzieher.ID und klicken auf hinzufügen. Setzten Sie dann einen Haken bei Neue Seite beginnen und bestätigen mit OK. Entfernen Sie den Hacken bei Gruppenkopf bei nachfolgenden Seiten erneut drucken.
 
 ![Gruppierung der Erzieher](Bilder/Erziehergruppen.svg "Gruppieren der Erziehen, um jeweils einen neuen Brief zu drucken")
@@ -419,7 +473,7 @@ Darunter können Sie Die Datenquellen aus der Datenbank ansteuern und darunter d
 
 ### Eine Texteingabe (Variable) in den Text einbauen (ReplaceText)
 
-Wir wollen nun in unserem Brief eine Abfrage einbauen, die es ermöglicht, einen variablen Text einzugeben. Sie können dazu in der Bearbeitungsansicht des RichText eine Variable in den Text einbauen. Wir nennen sie in unserem Beispiel die Variable „Verhalten“. Eine Variable ist im Text durch die Einrahmung durch $-Zeichen gekennzeichnet. In unserem Text müssen wir also $Verhalten$ schreiben.
+Wir wollen nun in unserem Brief eine Abfrage einbauen, die es ermöglicht, einen variablen Text einzugeben. Sie können dazu in der Bearbeitungsansicht des RichText eine Variable in den Text einbauen. Wir nennen sie in unserem Beispiel die Variable "Verhalten". Eine Variable ist im Text durch die Einrahmung durch $-Zeichen gekennzeichnet. In unserem Text müssen wir also $Verhalten$ schreiben.
 
 Damit diese Variable auch bearbeitet wird, müssen wir in die Programmierung wechseln. Gehen Sie auf den Richtext1 und auf das Ereignis OnMailMerge.
 
@@ -431,15 +485,15 @@ Geben Sie in die Programmierung das Folgende ein: (Nicht wundern, dass es noch R
         RichText1.RichText := ReplaceText (RichText1.RichText, '$Verhalten$',Verhalten);
     end;
 
-Nun müssen wir die Variable noch global als solche definieren. Wechseln Sie zum Hauptbericht:Schueler und gehen in die Berechnungen. Wechseln Sie die Ansicht auf „Verwendete Module“ und klicken auf „Deklarationen“ – „Variablen“.
+Nun müssen wir die Variable noch global als solche definieren. Wechseln Sie zum Hauptbericht:Schueler und gehen in die Berechnungen. Wechseln Sie die Ansicht auf "Verwendete Module" und klicken auf "Deklarationen" – "Variablen".
 
 ![Vairable Definieren](Bilder/VariableDefinieren.png "Variable definieren")
 
-Wir definieren nun die Variable „Verhalten“ als Zeichenfolge, einen sogenannten String. Geben Sie bei Programmierung ein:
+Wir definieren nun die Variable "Verhalten" als Zeichenfolge, einen sogenannten String. Geben Sie bei Programmierung ein:
 
     Verhalten: String;
 
-Wechseln Sie wieder die Ansicht auf „Ereignisse“ und gehen in die Operation „Report“ – „BeforePrint“. Hier sollten schon bspw. die Erzieher mit Anschreiben Programmierung stehen. Gehen Sie eine Zeile darunter und implementieren Sie die Textabfrage. Sie geben hier den Befehl, dass ein Texteingabefeld generiert werden soll und in unserem Falle einen sprachlichen Hinweis, der den Anfang des Satzes beschreibt. Schreiben Sie:
+Wechseln Sie wieder die Ansicht auf "Ereignisse" und gehen in die Operation "Report" – "BeforePrint". Hier sollten schon bspw. die Erzieher mit Anschreiben Programmierung stehen. Gehen Sie eine Zeile darunter und implementieren Sie die Textabfrage. Sie geben hier den Befehl, dass ein Texteingabefeld generiert werden soll und in unserem Falle einen sprachlichen Hinweis, der den Anfang des Satzes beschreibt. Schreiben Sie:
 
     begin
         Verhalten := Stringinput('Bitte das Fehlverhalten benennen: (...zu erwähnen, dass er/sie: ','');
@@ -497,8 +551,8 @@ Nun sollen Sie nach dem Datum in Form einer Abfrage gefragt werden.
 
 ### Den Briefkopf setzen (dynamisch ladbarer Subreport/Header_Footer)
 
-Den Briefkopf bei jedem Brief neu zu gestalten ist letztlich nicht sinnvoll, da man ja ansonsten in jedem Dokument jede Änderung manuell eingeben müsste. Deshalb gibt es sogenannte „dynamisch ladbare Subreports“. Dies sind kleine Unterberichte (Bspw. Briefköpfe, Listenfüße, etc.) die im Schildinstallationsverzeichnis unter SchILD-Reports - Header_Footer abgelegt sein müssen.  
-Sie können einen solchen Subreport sehr einfach einbinden. Gehen Sie in die auf das Symbol hierfür. Verwechseln Sie es bitte nicht mit dem Symbol für den „nomalen“ Subreport, es ist leider das gleiche Symbol.
+Den Briefkopf bei jedem Brief neu zu gestalten ist letztlich nicht sinnvoll, da man ja ansonsten in jedem Dokument jede Änderung manuell eingeben müsste. Deshalb gibt es sogenannte "dynamisch ladbare Subreports". Dies sind kleine Unterberichte (Bspw. Briefköpfe, Listenfüße, etc.) die im Schildinstallationsverzeichnis unter SchILD-Reports - Header_Footer abgelegt sein müssen.  
+Sie können einen solchen Subreport sehr einfach einbinden. Gehen Sie in die auf das Symbol hierfür. Verwechseln Sie es bitte nicht mit dem Symbol für den "nomalen" Subreport, es ist leider das gleiche Symbol.
 
 ![Symbol für dynamisch ladbaren Subreport](Bilder/DynLadbarerSubreport.svg "Symbol für dynamisch ladbaren Subreport")
 
@@ -506,7 +560,7 @@ Ziehen Sie nun den Bereich zwischen Titel und Gruppenkopf ein wenig auseinander 
 
 ![Dynamisch ladbaren Subreport einfügen](Bilder/DynSubreportEinfuegen.png "dynamisch ladbaren Subreport einfügen")
 
-Klicken Sie mit rechts auf den Subreport und dann auf „Subreportdatei wählen“. Es öffnet sich ein Windowsfenster im Ordner Header_Footer. Wählen Sie bspw. den Brief_Kopf_Eltern.rtm und klicken auf „öffnen“.
+Klicken Sie mit rechts auf den Subreport und dann auf "Subreportdatei wählen". Es öffnet sich ein Windowsfenster im Ordner Header_Footer. Wählen Sie bspw. den Brief_Kopf_Eltern.rtm und klicken auf "öffnen".
 
 ![Dynamsich ladbaren Subreport auswählen](Bilder/DynSubreportAuswaehlen.png "dynamisch ladbaren Subreport auswählen")
 
