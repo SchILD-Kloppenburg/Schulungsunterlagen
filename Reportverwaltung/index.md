@@ -264,3 +264,78 @@ Um die Textelemente in der Tabelle möglichst genau zu zentrieren, empfiehlt es 
 Bei Elementen, die sich ein Tabellenfeld teilen, wählen Sie bei dem oberen nur aTop, aLeft, aRight und bei dem unteren aBottom, aLeft, aRight.
 
 ## Erstellen einer Schüler-Telefonliste
+
+### Vorarbeiten
+
+Im Folgenden soll eine Schülerliste erstellt werden, die sämtliche Telefonnummern enthält. Das Ergebnis soll in etwa so aussehen:
+
+![Beispiel für eine Telefonliste](Bilder/AusshenTelefonliste.png "Beispielhaftes Aussehen der Telefonliste")
+
+Auf verzierende Elemente wie TableGrid wurde hier verzichtet.
+
+Zum Erstellen einer Schülerliste geht man zunächst analog zur Erstellung einer Lehrerliste wie wie vorher beschrieben vor. Im Gegensatz zu einer Lehrerliste ist hier allerdings die Angabe einer Datenquelle nicht notwendig, da Schild-NRW als schülerzentriertes Programm die Datenquelle Schüler voreingestellt hat. Der Entwurf ist hier zu sehen.
+
+![Entwurfsansicht der Telefonliste](Bilder/Entwuf_Telefonliste.png "Entwurfsansicht der Telefonliste")
+
+Im Kopfbereich sind Labelfelder angeordnet, die mit "Name", "Klasse" etc. beschriftet sind. Im Detailbereich sind die entsprechenden DBText-Felder angeordnet. Im Gegensatz zur Datenquelle "Lehrer" gibt es bei den Schülern bereits häufig verwendete Felder bereitgestellt, so dass hier keine Programmierung notwendig ist. Man findet so die Felder "NameVorname" und auch "PLZ_Ort".  
+Da zu jedem Schüler mehrere Telefonnummern existieren können und diese Zuordnung nicht eindeutig ist, benötigen wir dafür einen Subreport. Diesem weist man die Datenquelle "SchuelerTelefone" zu und kann im Subreport die Felder "Telefonart" und "Telefonnummer" einfügen.
+
+### Gruppierung
+
+Druckt man eine solche Liste aus, stellt man fest, dass am Ende einer Klasse einfach mit der nächsten Klasse begonnen wird, ohne einen Seitenumbruch einzufügen.
+
+![Kein Seitenumbruch beim Wechsel der Klasse](Bilder/VorGruppierung.png "Klassenliste ohne Seitenumbruch beim Klassenwechsel")
+
+Die Lösung ist, dass der Bericht nach Klassen gruppiert wird. Dazu muss man im Hauptbericht Bericht - Gruppen anwählen.
+
+![Einfügen einer Gruppierung nach Klasse](Bilder/GruppierungKlasse.png "Einfügen einer Gruppierung mit Seitenumbruch nach einem Klassenwechsel")
+
+Wählen Sie das Datenfeld "Schueler.Klasse" und klicken Sie auf "Hinzufügen". In einem zweiten Schritt können die unteren Kästchen angeklickt werden. Wir wollen bei Erreichen der nächsten Klasse einen Seitenumbruch einfügen. In dieser Einstellung wird, sobald sich die Klasse ändert, ein Seitenumbruch eingefügt. Falls Sie gerne doppelseitig drucken und Sie nicht möchten, dass auf der Vorderseite die 5A und auf der Rückseite die 5B auftaucht, klicken Sie zusätzlich auf „Start on odd page“.  
+Jetzt wird für jede Klasse eine neue Seite begonnen. Allerdings kann es weiterhin passieren, dass Schülerdaten beim Seitenumbruch auseinandergerissen werden und die Daten teils auf der einen, teils auf der anderen Seite landen.
+
+![Schülerdaten werden durch einen Seitenumbruch auseinandergerissen](Bilder/GruppierungSeitenumbruch.png "Schülerdaten werden durch einen Seitenumbruch auseinandergerissen")
+
+Das Ziel ist es, dass alle Daten eines Schülers entweder auf der einen oder auf der anderen Seite erscheinen. Auch dieses Problem lässt sich mit Gruppierung lösen.
+Wählen Sie wiederum "Bericht" – "Gruppen", klicken Sie erst auf "Hinzufügen" und wählen "Schueler.ID". Unten ist das Feld "Gruppe zusammenhalten" bereits angehakt. Das Ergebnis sollte so aussehen:
+
+![Schülerdaten werden zusammengehalten](Bilder/GruppierenSchüler.png "Schülerdaten werden zusammengehalten")
+
+Diese Einstellungen bewirken, dass alle Daten, die zu einem Schüler gehören, zusammen auf einer Seite erscheinen und zwischendurch kein Seitenumbruch stattfindet. Dazu muss man zwei Schüler eindeutig voneinander unterscheiden können. Der Nachname reicht dabei nicht notwendigerweise aus, denn auch Zwillinge in einer Klasse haben den gleichen Nachnamen. Zur Unterscheidung eignet sich immer die ID eines Schülers. Die ID ist eine Schülernummer, die Schild-NRW automatisch generiert und die garantiert eindeutig ist. Mit diesen beiden Angaben sollte die Telefonliste wie gewünscht funktionieren.
+
+## Kreuztabellen
+
+### Ein erstes Beispiel
+
+Kreuztabellen stellen eine hervorragende Möglichkeit dar, Datenmengen zusammenzuführen und übersichtlich auszuwerten. Als Einstiegsbeispiel soll eine Übersicht erstellt werden, wie viele Schüler sich in welcher Klasse befinden. Da in einer Kreuztabelle generell alle ausgewählten Schüler ausgewertet werden, ist es während der Entwicklung der Tabelle ratsam, die Schülermenge einzuschränken. Ansonsten kann das Anzeigen der Kreuztabelle unnötig lange dauern. Im Folgenden beschränken wir uns auf die Jahrgangsstufe 05.  
+Wir erstellen einen neuen Bericht und fügen in den Detailbereich eine Kreuztabelle ein.
+
+![Einrichten einer Kreuztabelle](Bilder/Kreuztabelle-Anfang.svg "Einrichten einer Kreuztabelle")
+
+Klicken Sie nun mit der rechten Maustaste auf das Element CorssTab und wählen "Konfigurieren".
+
+![Konfiguration der ersten Kreuztabelle](Bilder/Kreuztabelle-Konfiguration.svg "Konfiguration der ersten Kreuztabelle")
+
+In der linken Spalte sehen Sie die Felder, die sie auswerten können. Unglücklicherweise sind die Felder nicht alphabetisch sortiert, so dass man ab und zu Mühe hat, die richtigen Felder zu finden. Als Faustregel können Sie sich merken, dass die Felder in chronologischer Reihenfolge erscheinen. Wichtige Felder erscheinen oben, später hinzugekommene wie „MasernImpfnachweis“ viel weiter unten.
+
+Suchen Sie nun das Feld „Klasse“ und ziehen Sie es an die Stelle „Neue Zeile“ wie in Abbildung 26. Ziehen Sie nun das Feld „ID“ an die Stelle „Neuer Wert“. Ändern Sie nun die Berechnung von „Summe“ in „Laufender Zähler“. Wenn Sie nun mit „OK“ bestätigt haben, finden Sie in der Vorschau Sie nun die Ausgabe wie in der nächsten Abbildung.
+
+![Vorschau der Kreuztabelle](Bilder/Kreuztabelle-Vorschau.png "Vorschau der Kreuztabelle")
+
+Das sieht vielversprechend aus. Zu jeder Klasse wird die Anzahl der Schüler ausgegeben. Allerdings taucht die Kreuztabelle wiederholt auf. In der jetzigen Einstellung wird für jeden Schüler eine eigene Kreuztabelle ausgegeben. Das liegt daran, dass die Datenquelle des Berichts „Schüler“ ist und somit für jeden vorkommenden Schüler der Detailbereich – und damit die Kreuztabelle – erneut ausgegeben wird.  
+Da die Kreuztabelle nur einmal ausgegeben werden soll, stellen Sie die Datenquelle des Berichts auf „keine“. Trotzdem sollen in der Kreuztabelle die Schüler ausgewertet werden, so dass wir diese Datenquelle nur der Kreuztabelle zuweisen. Markieren Sie in der Entwurfsansicht die Kreuztabelle und stellen Sie oben die Datenquelle für die Schüler ein.
+
+![Einstellen der Datenquelle für die Kreuztabelle](Bilder/Kreuztabelle-Konfiguration2.svg "Einstellen der Datenquelle für die Kreuztabelle")
+
+Somit taucht die Kreuztabelle nur noch ein einziges Mal auf.
+
+### Ein komplexeres Beispiel
+
+Das bisherige Beispiel soll nun erweitert werden. Es soll zusätzlich noch ausgegeben werden, wie viele Jungen und Mädchen in welcher Klasse sind. Zusätzlich soll eine Gesamtübersicht über jede Jahrgangsstufe ausgegeben werden. Ändern Sie in der Entwurfsansicht die Kreuztabelle ab wie in der folgende Abbildung angezeigt.
+
+![Ein komplexeres Beispiel für eine Kreuztabelle](Bilder/Kreuztabelle-Konfiguration3.png "Ein komplexeres Beispiel für eine Kreuztabelle")
+
+Achten Sie darauf, die Felder „ASDJahrgang“ statt „Jahrgang“ sowie „GeschlechtMW“ statt „Geschlecht“ zu verwenden. Schauen Sie sich nun die Vorschau an. Sie haben mit relativ einfachen Mitteln eine Übersicht geschaffen.
+Der Phantasie sind die Grenzen nur durch die Papiergröße gesetzt. Manchmal benötigt man statistische Auswertungen wie Religionsübersichten, Verteilung der Wohnorte oder Förderschwerpunkte. Wenn die Übersicht zu groß wird, kann man auch mit einer Umstrukturierung der Tabelle etwas Übersichtlichkeit schaffen. Die Namen der Wohnorte können recht lang werden, so dass es sich anbietet, diese untereinander zu schreiben. Die Namen der Klassen sind kurz, so dass diese nebeneinander angeordnet werden können.
+
+## Schreiben eines Serienbriefes
+
