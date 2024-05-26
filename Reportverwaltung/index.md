@@ -137,7 +137,7 @@ Wählen Sie anschließend Label aus und klicken in die Tabellenfelder der Kopfze
 
 Anschließend ziehen Sie alle Felder passend in eine Reihe. Nutzen Sie dazu die blaue magnetische Hilfslinie. Zentrieren Sie die Zelle anschließend horizontal und vertikal und wählen Sie Fettdruck.
 
-![Formatierung des DBText-Feldes](Bilder/13%20-%20Formatierung.svg "Formatierung des DBText-Feldes")
+![Formatierung des DBText-Feldes](Bilder/13-Formatierung.svg "Formatierung des DBText-Feldes")
 
 Nun müssen die Tabellenfelder aus der Datenbank heraus gefüllt werden. Dafür bietet sich in den meisten Fällen ein DB Textfeld (Das A-Symbol mit der Tabelle im Hintergrund) an. Klicken Sie darauf und dann in ein Tabellenfeld im Detailbereich. Hier ist die Datenquelle des Reports (also hier Lehrer) voreingestellt.
 
@@ -150,7 +150,7 @@ Wählen Sie die passenden Felder außer dem Zähler und den Fächern. Bei der An
 Wenn Sie die Postleitzahl und den Ort in eine Tabellenzelle setzen wollen, stoßen Sie auf die Schwierigkeit, dass diese nicht direkt hintereinander stehen. Dieses Problem kann man über eine einfache Programmierung lösen.  
 Wahlen Sie statt eines DBText-Feldes ein Label aus (A-Symbol ohne Tabelle im Hintergrund) und klicken in die Stelle der Tabelle im Detailbereich, in der PLZ und Ort der Lehrkräfte erscheinen soll. Merken Sie sich die Nummerierung ihres Labels. In unserem Beispiel ist es Label 9.
 
-![Vorbereitung zur Programmierung des Labels](Bilder/15%20-%20PLZ_Ort.svg "Vorbereitung zur Programmierung des Labels")
+![Vorbereitung zur Programmierung des Labels](Bilder/15-PLZ_Ort.svg "Vorbereitung zur Programmierung des Labels")
 
 Unter dem Ereignis OnGetText wird in einem einfachen Code programmiert, was in dem Label ausgegeben werden soll. Dazu bietet der Reportdesigner Hilfen an, um die entsprechenden Datenfelder der Datenbank anzusteuern.
 
@@ -197,7 +197,7 @@ Wählen Sie die Option Unterbericht und klicken dann in den Detailbereich.
 
 Klicken Sie mit der rechten Maustaste auf den nun erscheinenden Subreport1 und wählen Sie die Option "Breite der Stammkomponente" ab. Nun können Sie den Subreport kleiner ziehen und in Ihre Tabelle ziehen. Wählen Sie unten links im Reportdesigner die Karteikarte SubReport1.
 
-![Subreport wählen](Bilder/Subreport_waehlen.svg "Subreport im Karteireiter anklicken)
+![Subreport wählen](Bilder/Subreport_waehlen.svg "Subreport im Karteireiter anklicken")
 
 In diesem klicken Sie wieder auf Bericht - Datenquellen und wählen die Datenquelle LehrerLehramt aus. Wählen Sie nun Bericht und deaktivieren Sie die Optionen Titel und Zusammenfassung.
 
@@ -315,7 +315,7 @@ Bei komplexen Reports kann es sehr sinnvoll sein, einzelne Elemente wir Label, D
 Es kann in einigen Fällen sinnvoll sein, bestimmte Merkmale in einer Liste hervorzuheben, bzw. kenntlich zu machen. Am Beispiel des "Masernimpfnachweises" soll dies hier illustriert werden. Dieser liegt in der Datenbank als String-Wert in Form eines + oder – vor, also vorhanden und nicht vorhanden.  
 In einem DBText-Feld, welches die Bezeichnung "LMasern" von uns erhalten hat, wird eine Programmierung eingebaut, die dafür sorgt, dass ungeimpfte Schülerinnen und Schüler den fett und rot gedruckten Hinweis erhalten, dass sie keinen Impfschutz besitzen. Die geimpften erhalten in normal gedruckten grünen Lettern den Hinweis, dass ein Impfschutz vorhanden ist.
 
-![Voransicht des Masernschutzliste](Bilder/Masernschutz_Ergebnis.png "Voransicht der Masernschutzliste")
+![Voransicht der Masernschutzliste](Bilder/Masernschutz_Ergebnis.png "Voransicht der Masernschutzliste")
 
 Dies kann in zwei Schritten umgesetzt werden. Zum einen muss dem Label LMasern ein Text zugewiesen werden. Die kann nur über das Ereignis OnGetText geschehen. Der Code sieht dabei so aus:
 
